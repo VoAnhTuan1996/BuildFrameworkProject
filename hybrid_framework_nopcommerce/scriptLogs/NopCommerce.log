@@ -1,0 +1,183 @@
+[2024-04-04 23:18:06,487] - Register - Step 01: Navigate to 'Register' page
+[2024-04-04 23:18:08,009] - Register - Step 02: Enter to all fields information
+[2024-04-04 23:18:08,720] - Register - Step 03: Click to Register button
+[2024-04-04 23:18:09,431] - Register - Step 04: Verify success message displayed
+[2024-04-04 23:18:09,622] - Register - Step 05: Click to logout
+[2024-04-04 23:18:50,210] - Login - Step 01: Navigate to Login page
+[2024-04-04 23:18:51,135] - Login - Step 02: Enter to email and password textbox
+[2024-04-04 23:18:51,329] - Login - Step 03: Click to login button
+[2024-04-04 23:18:51,960] - Login - Step 04: Verify my account link is displayed
+[2024-04-04 23:19:44,067] - Register - Step 01: Navigate to 'Register' page
+[2024-04-04 23:19:45,486] - Register - Step 02: Enter to all fields information
+[2024-04-04 23:19:46,132] - Register - Step 03: Click to Register button
+[2024-04-04 23:19:46,539] - Register - Step 04: Verify success message displayed
+[2024-04-04 23:20:12,222] - Login - Step 01: Navigate to Login page
+[2024-04-04 23:21:05,177] - Register - Step 01: Navigate to 'Register' page
+[2024-04-04 23:21:06,376] - Register - Step 02: Enter to all fields information
+[2024-04-04 23:21:07,033] - Register - Step 03: Click to Register button
+[2024-04-04 23:21:07,413] - Register - Step 04: Verify success message displayed
+[2024-04-04 23:21:19,355] - Login - Step 01: Navigate to Login page
+[2024-04-04 23:21:57,705] - Register - Step 01: Navigate to 'Register' page
+[2024-04-04 23:21:58,877] - Register - Step 02: Enter to all fields information
+[2024-04-04 23:21:59,578] - Register - Step 03: Click to Register button
+[2024-04-04 23:22:00,292] - Register - Step 04: Verify success message displayed
+[2024-04-04 23:22:00,457] - Register - Step 05: Click to logout
+[2024-04-04 23:22:00,895] - Login - Step 01: Navigate to Login page
+[2024-04-04 23:22:01,478] - Login - Step 02: Enter to email and password textbox
+[2024-04-04 23:22:01,727] - Login - Step 03: Click to login button
+[2024-04-04 23:22:02,347] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-04-05 00:03:27,970] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-05 00:03:29,205] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-05 00:03:29,893] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-05 00:03:30,547] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-05 00:03:30,688] - Register - Step 05: Click to logout
+[INFO ] [2024-04-05 00:03:31,131] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-05 00:03:31,714] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-05 00:03:31,932] - Login - Step 03: Click to login button
+[INFO ] [2024-04-05 00:03:32,557] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-04-05 00:05:16,750] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-05 00:05:18,036] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-05 00:05:18,771] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-05 00:05:19,158] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-05 00:05:59,791] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-05 00:06:00,764] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-05 00:06:01,045] - Login - Step 03: Click to login button
+[INFO ] [2024-04-05 00:06:01,748] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-04-05 15:44:37,213] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-05 15:44:38,484] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-05 15:44:39,143] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-05 15:44:39,832] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-05 15:44:39,976] - Register - Step 05: Click to logout
+[INFO ] [2024-04-05 15:44:40,393] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-05 15:44:40,923] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-05 15:44:41,121] - Login - Step 03: Click to login button
+[INFO ] [2024-04-05 15:44:41,772] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-04-05 15:46:31,444] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-05 15:46:32,641] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-05 15:46:33,343] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-05 15:46:33,961] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-05 15:46:34,124] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-05 15:46:34,514] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-05 15:46:34,748] - Login - Step 03: Click to login button
+[INFO ] [2024-04-05 15:46:35,371] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-04-05 16:22:13,033] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-05 16:22:14,232] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-05 16:22:14,938] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-05 16:22:15,315] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-05 16:22:22,318] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-05 19:27:18,720] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-05 19:27:19,944] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-05 19:27:20,658] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-05 19:27:21,301] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-05 19:27:21,441] - Register - Step 05: Click to logout
+[INFO ] [2024-04-05 19:27:21,832] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-05 19:27:22,361] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-05 19:27:22,560] - Login - Step 03: Click to login button
+[INFO ] [2024-04-05 19:27:23,178] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-04-05 23:52:17,110] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-05 23:52:18,393] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-05 23:52:19,029] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-05 23:52:19,658] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-05 23:52:19,810] - Register - Step 05: Click to logout
+[INFO ] [2024-04-05 23:52:20,205] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-05 23:52:20,750] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-05 23:52:21,534] - Login - Step 03: Click to login button
+[INFO ] [2024-04-05 23:52:22,266] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-04-06 01:33:03,801] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-06 01:33:05,109] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-06 01:33:06,113] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-06 01:33:06,833] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-06 01:33:06,932] - Register - Step 05: Click to logout
+[INFO ] [2024-04-06 01:33:07,373] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-06 01:33:07,846] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-06 01:33:08,160] - Login - Step 03: Click to login button
+[INFO ] [2024-04-06 01:33:08,784] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-04-06 04:06:03,161] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-06 04:06:04,023] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-06 04:06:05,070] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-06 04:06:05,846] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-06 04:06:05,967] - Register - Step 05: Click to logout
+[INFO ] [2024-04-06 04:06:06,436] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-06 04:06:06,901] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-06 04:06:07,267] - Login - Step 03: Click to login button
+[INFO ] [2024-04-06 04:06:07,989] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-04-06 04:08:52,185] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-06 04:08:53,520] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-06 04:08:54,505] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-06 04:08:54,962] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-06 04:09:35,758] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-06 04:09:36,766] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-06 04:09:37,176] - Login - Step 03: Click to login button
+[INFO ] [2024-04-06 04:09:37,965] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-04-07 16:51:07,850] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-07 16:51:08,540] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-07 16:51:09,540] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-07 16:51:10,305] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-07 16:51:10,393] - Register - Step 05: Click to logout
+[INFO ] [2024-04-07 16:51:10,951] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-07 16:51:11,404] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-07 16:51:11,830] - Login - Step 03: Click to login button
+[INFO ] [2024-04-07 16:51:12,551] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-04-07 20:51:29,664] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-07 20:51:30,849] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-07 20:51:31,840] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-07 20:51:32,588] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-07 20:51:32,668] - Register - Step 05: Click to logout
+[INFO ] [2024-04-07 20:51:33,242] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-07 20:51:33,731] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-07 20:51:34,025] - Login - Step 03: Click to login button
+[INFO ] [2024-04-07 20:51:34,749] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-04-07 21:40:50,176] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-07 21:40:50,992] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-07 21:40:52,245] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-07 21:40:53,023] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-07 21:40:53,106] - Register - Step 05: Click to logout
+[INFO ] [2024-04-07 21:40:53,778] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-07 21:40:54,205] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-07 21:40:54,593] - Login - Step 03: Click to login button
+[INFO ] [2024-04-07 21:40:55,343] - Login - Step 04: Verify my account link is displayed.
+[INFO ] [2024-04-07 21:41:31,652] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-07 21:41:32,911] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-07 21:41:33,901] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-07 21:41:34,317] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-07 21:42:15,099] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-07 21:42:16,095] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-07 21:42:16,489] - Login - Step 03: Click to login button
+[INFO ] [2024-04-07 21:42:17,266] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-04-07 22:50:17,270] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-07 22:50:17,947] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-07 22:50:19,206] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-07 22:50:19,983] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-07 22:50:20,109] - Register - Step 05: Click to logout
+[INFO ] [2024-04-07 22:50:20,765] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-07 22:50:21,235] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-07 22:50:21,646] - Login - Step 03: Click to login button
+[INFO ] [2024-04-07 22:50:22,388] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-04-07 22:51:14,558] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-07 22:51:15,983] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-07 22:51:17,642] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-07 22:51:18,141] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-07 22:51:58,994] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-07 22:52:00,076] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-07 22:52:00,605] - Login - Step 03: Click to login button
+[INFO ] [2024-04-07 22:52:01,341] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-04-07 22:55:44,249] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-07 22:55:44,914] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-07 22:55:45,873] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-07 22:55:48,489] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-07 22:55:48,562] - Register - Step 05: Click to logout
+[INFO ] [2024-04-07 22:56:29,329] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-07 22:57:07,767] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-07 22:57:09,001] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-07 22:57:09,976] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-07 22:57:10,358] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-07 22:57:38,462] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-07 22:57:39,152] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-07 22:57:40,160] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-07 22:57:40,777] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-07 22:57:40,930] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-07 22:57:40,998] - Register - Step 05: Click to logout
+[INFO ] [2024-04-07 22:57:41,574] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-07 22:57:42,020] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-07 22:57:42,361] - Login - Step 03: Click to login button
+[INFO ] [2024-04-07 22:57:43,137] - Login - Step 04: Verify my account link is displayed

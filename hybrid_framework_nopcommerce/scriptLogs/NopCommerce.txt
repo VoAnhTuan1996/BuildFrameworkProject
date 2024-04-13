@@ -1,0 +1,9 @@
+[INFO ] [2024-04-07 22:57:38,462] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-07 22:57:39,152] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-07 22:57:40,160] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-07 22:57:40,930] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-07 22:57:40,998] - Register - Step 05: Click to logout
+[INFO ] [2024-04-07 22:57:41,574] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-07 22:57:42,020] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-07 22:57:42,361] - Login - Step 03: Click to login button
+[INFO ] [2024-04-07 22:57:43,137] - Login - Step 04: Verify my account link is displayed

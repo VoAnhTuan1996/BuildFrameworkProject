@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Facebook]">
+  <parameter name="url" value="https://www.facebook.com/"/>
+  <listeners>
+    <listener class-name="commons.MethodListener"/>
+  </listeners>
+  <test name="Run on Firefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.facebook.register.Element_Undisplayed">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="TC_03_Verify_Element_Undisplayed_Not_In_DOM"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- com.facebook.register.Element_Undisplayed -->
+    </classes>
+  </test> <!-- Run on Firefox(failed) -->
+</suite> <!-- Failed suite [Facebook] -->
