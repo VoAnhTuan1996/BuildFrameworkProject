@@ -181,3 +181,103 @@
 [INFO ] [2024-04-07 22:57:42,020] - Login - Step 02: Enter to email and password textbox
 [INFO ] [2024-04-07 22:57:42,361] - Login - Step 03: Click to login button
 [INFO ] [2024-04-07 22:57:43,137] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-04-14 15:56:30,945] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-14 15:56:32,173] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-14 15:56:33,550] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-14 15:56:34,264] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-14 15:56:34,356] - Register - Step 05: Click to logout
+[INFO ] [2024-04-14 15:56:35,140] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-14 15:56:35,949] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-14 15:56:36,289] - Login - Step 03: Click to login button
+[INFO ] [2024-04-14 15:56:36,899] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-04-14 16:18:17,334] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-14 16:18:18,435] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-14 16:18:19,371] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-14 16:18:20,273] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-14 16:51:37,558] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-14 16:51:38,281] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-14 16:51:39,250] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-14 16:51:40,028] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-14 16:51:40,109] - Register - Step 05: Click to logout
+[INFO ] [2024-04-14 16:51:40,567] - Login - Step 06: Navigate to Login page
+[INFO ] [2024-04-14 16:51:41,108] - Login - Step 07: Enter to email and password textbox
+[INFO ] [2024-04-14 16:51:41,404] - Login - Step 08: Click to login button
+[INFO ] [2024-04-14 21:29:02,312] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-14 21:29:03,269] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-14 21:29:04,434] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-14 21:29:05,173] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-14 21:29:05,520] - OS name = windows 10
+[INFO ] [2024-04-14 21:29:05,521] - Driver instance name = chromedriver: chrome on windows (4ea78d800512e05e67431868166e2bd1)
+[INFO ] [2024-04-15 00:01:13,359] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-15 00:01:13,998] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-15 00:01:14,977] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-15 00:01:15,686] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-15 00:01:15,800] - Register - Step 05: Click to logout
+[INFO ] [2024-04-15 00:01:16,407] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-15 00:01:16,840] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-15 00:01:17,181] - Login - Step 03: Click to login button
+[INFO ] [2024-04-15 00:01:57,801] - OS name = windows 10
+[INFO ] [2024-04-15 00:01:57,802] - Driver instance name = chromedriver: chrome on windows (5326ff0d05519b9982cadfcc499893b1)
+[INFO ] [2024-04-15 00:48:38,139] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-15 00:48:39,624] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-15 00:49:00,567] - OS name = windows 10
+[INFO ] [2024-04-15 00:49:00,567] - Driver instance name = chromedriver: chrome on windows (b0c93871ae6688c602ff3e37ddd5ccf4)
+[INFO ] [2024-04-15 00:50:06,926] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-15 00:50:08,383] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-15 00:50:19,758] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-15 00:50:20,506] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-15 00:50:20,646] - Register - Step 05: Click to logout
+[INFO ] [2024-04-15 00:50:21,319] - OS name = windows 10
+[INFO ] [2024-04-15 00:50:21,319] - Driver instance name = chromedriver: chrome on windows (d556782c6d44b92f121885c15288e19c)
+[INFO ] [2024-04-15 11:07:54,045] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-15 11:07:55,509] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-15 11:08:00,061] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-15 11:08:00,910] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-15 11:08:01,076] - Register - Step 05: Click to logout
+[INFO ] [2024-04-15 11:08:01,734] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-15 11:08:02,208] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-15 11:08:02,533] - Login - Step 03: Click to login button
+[INFO ] [2024-04-15 11:08:03,175] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-04-15 11:08:03,908] - MyAccount - Step 01: Navigate to 'My Account' page
+[INFO ] [2024-04-15 11:08:04,346] - MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[INFO ] [2024-04-15 11:08:04,432] - MyAccount - Step 03: Verify 'First Name' value is correctly
+[INFO ] [2024-04-15 11:08:24,560] - OS name = windows 10
+[INFO ] [2024-04-15 11:08:24,560] - Driver instance name = chromedriver: chrome on windows (f55a5cfdfa04dd6a12ae364544f626a0)
+[INFO ] [2024-04-15 11:13:51,106] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-15 11:13:52,310] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-15 11:13:52,666] - Login - Step 03: Click to login button
+[INFO ] [2024-04-15 11:13:53,417] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-04-15 11:13:54,159] - MyAccount - Step 01: Navigate to 'My Account' page
+[INFO ] [2024-04-15 11:13:54,561] - MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[INFO ] [2024-04-15 11:13:54,654] - MyAccount - Step 03: Verify 'First Name' value is correctly
+[INFO ] [2024-04-15 11:13:54,733] - OS name = windows 10
+[INFO ] [2024-04-15 11:13:54,734] - Driver instance name = chromedriver: chrome on windows (504238de34f572888beafac5e80bc287)
+[INFO ] [2024-04-15 11:15:42,504] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-15 11:15:43,878] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-15 11:15:44,222] - Login - Step 03: Click to login button
+[INFO ] [2024-04-15 11:15:44,946] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-04-15 11:15:45,708] - MyAccount - Step 01: Navigate to 'My Account' page
+[INFO ] [2024-04-15 11:15:46,115] - MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[INFO ] [2024-04-15 11:15:46,210] - MyAccount - Step 03: Verify 'First Name' value is correctly
+[INFO ] [2024-04-15 11:15:46,358] - OS name = windows 10
+[INFO ] [2024-04-15 11:15:46,359] - Driver instance name = chromedriver: chrome on windows (a1cec39b4d982876682e09b20d209254)
+[INFO ] [2024-04-15 11:17:35,551] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-15 11:17:36,272] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-15 11:17:36,608] - Login - Step 03: Click to login button
+[INFO ] [2024-04-15 11:17:37,268] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-04-15 11:17:38,163] - MyAccount - Step 01: Navigate to 'My Account' page
+[INFO ] [2024-04-15 11:17:38,552] - MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[INFO ] [2024-04-15 11:17:38,642] - MyAccount - Step 03: Verify 'First Name' value is correctly
+[INFO ] [2024-04-15 11:17:58,726] - OS name = windows 10
+[INFO ] [2024-04-15 11:17:58,726] - Driver instance name = chromedriver: chrome on windows (3856bfb433cc7028224c03ae23005790)
+[INFO ] [2024-04-15 11:19:34,205] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-15 11:19:34,854] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-15 11:19:35,207] - Login - Step 03: Click to login button
+[INFO ] [2024-04-15 11:19:36,018] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-04-15 11:19:36,803] - MyAccount - Step 01: Navigate to 'My Account' page
+[INFO ] [2024-04-15 11:19:37,227] - MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[INFO ] [2024-04-15 11:19:37,310] - MyAccount - Step 03: Verify 'First Name' value is correctly
+[INFO ] [2024-04-15 11:19:37,438] - MyAccount - Step 04: Verify 'Last Name' value is correctly
+[INFO ] [2024-04-15 11:19:37,499] - MyAccount - Step 03: Verify 'Email' value is correctly
+[INFO ] [2024-04-15 11:19:37,562] - OS name = windows 10
+[INFO ] [2024-04-15 11:19:37,562] - Driver instance name = chromedriver: chrome on windows (3cc33518e8171b69ef24c82f09a205b7)

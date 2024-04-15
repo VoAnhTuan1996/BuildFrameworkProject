@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on CHROME"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="3.381">
+  <properties />
+  
+  
+            <testcase name="User_03_MyAccount" time="0.757" classname="com.nopcommerce.user.Pattern_Object" />
+                <testcase name="User_02_Login" time="2.624" classname="com.nopcommerce.user.Pattern_Object" />
+      
+</testsuite>

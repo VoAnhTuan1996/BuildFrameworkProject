@@ -28,7 +28,7 @@ import pageObjects.nopCommerce.portal.UserMyProductReviewPageObject;
 import pageObjects.nopCommerce.portal.UserRewardPointPageObject;
 import pageUIs.jquery.uploadfile.BasePageJqueryUI;
 import pageUIs.jquery.uploadfile.HomePageUI;
-import pageUIs.nopEcommerce.user.BasePageUI;
+import pageUIs.nopEcommerce.user.BasePageNopCommerceUI;
 
 public class BasePage {
 	public static BasePage getBasePageObject() {
@@ -224,6 +224,10 @@ public class BasePage {
 	
 	public String getElementAttribute(WebDriver driver, String locator, String attribute) {
 		return getWebElement(driver, locator).getAttribute(attribute);
+	}
+	
+	public String getElementAttribute(WebDriver driver, String locator, String attributeName, String ...dynamicValues) {
+		return getWebElement(driver, getDynamicXpath(locator,dynamicValues)).getAttribute(attributeName);
 	}
 	
 	public String getElementText(WebDriver driver, String locator) {
@@ -488,32 +492,32 @@ public class BasePage {
 	
 	//Tối ưu ở SwitchPage
 	public UserCustomerInfoPageObject openCustomerInfoPage(WebDriver driver) {
-		waitForElementClickable(driver, BasePageUI.CUSTOMER_INFO_LINK);
-		clickToElement(driver, BasePageUI.CUSTOMER_INFO_LINK);
+		waitForElementClickable(driver, BasePageNopCommerceUI.CUSTOMER_INFO_LINK);
+		clickToElement(driver, BasePageNopCommerceUI.CUSTOMER_INFO_LINK);
 		return PageGeneratorManager.getUserCustomerInfoPage(driver);
 	}
 	
 	public UserAddressPageObject openAddressPage(WebDriver driver) {
-		waitForElementClickable(driver, BasePageUI.ADDRESS_LINK);
-		clickToElement(driver, BasePageUI.ADDRESS_LINK);
+		waitForElementClickable(driver, BasePageNopCommerceUI.ADDRESS_LINK);
+		clickToElement(driver, BasePageNopCommerceUI.ADDRESS_LINK);
 		return PageGeneratorManager.getUserAddressPage(driver);
 	}
 	
 	public UserMyProductReviewPageObject openMyProductReviewPage(WebDriver driver) {
-		waitForElementClickable(driver, BasePageUI.MY_PRODUCT_REVIEW_LINK);
-		clickToElement(driver, BasePageUI.MY_PRODUCT_REVIEW_LINK);
+		waitForElementClickable(driver, BasePageNopCommerceUI.MY_PRODUCT_REVIEW_LINK);
+		clickToElement(driver, BasePageNopCommerceUI.MY_PRODUCT_REVIEW_LINK);
 		return PageGeneratorManager.getUserMyProductReviewPage(driver);
 	}
 	
 	public UserRewardPointPageObject openRewardPoint(WebDriver driver) {
-		waitForElementClickable(driver, BasePageUI.REWARD_POINT_LINK);
-		clickToElement(driver, BasePageUI.REWARD_POINT_LINK);
+		waitForElementClickable(driver, BasePageNopCommerceUI.REWARD_POINT_LINK);
+		clickToElement(driver, BasePageNopCommerceUI.REWARD_POINT_LINK);
 		return PageGeneratorManager.getUserRewardPointPage(driver);
 	}
 	//Tối ưu ở Dynamic Locator
 	public BasePage openPagesAtMyAccountByName(WebDriver driver, String pageName) {
-		waitForElementClickable(driver, BasePageUI.DYNAMIC_PAGES_AT_MY_ACCOUNT_AREA, pageName);
-		clickToElement(driver, BasePageUI.DYNAMIC_PAGES_AT_MY_ACCOUNT_AREA,pageName);
+		waitForElementClickable(driver, BasePageNopCommerceUI.DYNAMIC_PAGES_AT_MY_ACCOUNT_AREA, pageName);
+		clickToElement(driver, BasePageNopCommerceUI.DYNAMIC_PAGES_AT_MY_ACCOUNT_AREA,pageName);
 		switch(pageName) {
 		case "Customer info":
 			return PageGeneratorManager.getUserCustomerInfoPage(driver);
@@ -528,16 +532,74 @@ public class BasePage {
 		}
 	}
 	
+	//Pattern Object
+	public void openPagesAtMyAccountByPageName(WebDriver driver, String pageName) {
+		waitForElementClickable(driver, BasePageNopCommerceUI.DYNAMIC_PAGES_AT_MY_ACCOUNT_AREA,pageName);
+		clickToElement(driver, BasePageNopCommerceUI.DYNAMIC_PAGES_AT_MY_ACCOUNT_AREA,pageName);
+	}
+	
+	/**
+	 * @param driver
+	 * @param textboxID
+	 * @param value
+	 */
+	public void inputToTextboxByID(WebDriver driver, String textboxID, String value) {
+		waitForElementVisible(driver, BasePageNopCommerceUI.DYNAMIC_TEXTBOX_BY_ID, textboxID);
+		sendKeyToElement(driver, BasePageNopCommerceUI.DYNAMIC_TEXTBOX_BY_ID, value, textboxID);
+	}
+	
+	public void clickToButtonByText(WebDriver driver, String buttonText) {
+		waitForElementClickable(driver, BasePageNopCommerceUI.DYNAMIC_BUTTON_BY_TEXT, buttonText);
+		clickToElement(driver, BasePageNopCommerceUI.DYNAMIC_BUTTON_BY_TEXT,buttonText);
+	}
+	
+	/**
+	 * @param driver
+	 * @param dropdownAttributeName
+	 */
+	public void selectToDropdownByName(WebDriver driver, String dropdownAttributeName, String itemValue) {
+		waitForElementClickable(driver, BasePageNopCommerceUI.DYNAMIC_DROPDOWN_BY_NAME, dropdownAttributeName);
+		selectItemInDefaultDropdown(driver, BasePageNopCommerceUI.DYNAMIC_DROPDOWN_BY_NAME, itemValue, dropdownAttributeName);
+	}
+	
+	/**
+	 * @param driver
+	 * @param radioButtonLabelName
+	 */
+	public void clickToRadioButtonByLabel(WebDriver driver, String radioButtonLabelName) {
+		waitForElementClickable(driver, BasePageNopCommerceUI.DYNAMIC_RADIO_BUTTON_BY_LABEL, radioButtonLabelName);
+		checkToDefaultCheckboxRadio(driver, BasePageNopCommerceUI.DYNAMIC_RADIO_BUTTON_BY_LABEL, radioButtonLabelName);
+	}
+	
+	/**
+	 * @param driver
+	 * @param checkboxLabelName
+	 */
+	public void clickToCheckboxByLabel(WebDriver driver, String checkboxLabelName) {
+		waitForElementClickable(driver, BasePageNopCommerceUI.DYNAMIC_CHECKBOX_BY_LABEL, checkboxLabelName);
+		checkToDefaultCheckboxRadio(driver, BasePageNopCommerceUI.DYNAMIC_CHECKBOX_BY_LABEL, checkboxLabelName);
+	}
+	
+	/**
+	 * @param driver
+	 * @param textboxID
+	 * @return
+	 */
+	public String getTextboxValueByID(WebDriver driver, String textboxID) {
+		waitForElementVisible(driver, BasePageNopCommerceUI.DYNAMIC_TEXTBOX_BY_ID, textboxID);
+		return getElementAttribute(driver, BasePageNopCommerceUI.DYNAMIC_TEXTBOX_BY_ID,"value",textboxID);
+	}
+	
 	// Tối ưu ở Switch Role
 	public UserHomePageObject clickToLogoutAtUserPage(WebDriver driver) {
-		waitForElementClickable(driver, BasePageUI.LOGOUT_LINK_AT_USER);
-		clickToElement(driver, BasePageUI.LOGOUT_LINK_AT_USER);
+		waitForElementClickable(driver, BasePageNopCommerceUI.LOGOUT_LINK_AT_USER);
+		clickToElement(driver, BasePageNopCommerceUI.LOGOUT_LINK_AT_USER);
 		return PageGeneratorManager.getUserHomePage(driver);
 	}
 	
 	public AdminLoginPageObject clickToLogoutAtAdminPage(WebDriver driver) {
-		waitForElementClickable(driver, BasePageUI.LOGOUT_LINK_AT_ADMIN);
-		clickToElement(driver, BasePageUI.LOGOUT_LINK_AT_ADMIN);
+		waitForElementClickable(driver, BasePageNopCommerceUI.LOGOUT_LINK_AT_ADMIN);
+		clickToElement(driver, BasePageNopCommerceUI.LOGOUT_LINK_AT_ADMIN);
 		return PageGeneratorManager.getAdminLoginPage(driver);
 	}
 	

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Run on Firefox</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/3/3</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Apr 04 16:19:53 ICT 2024</td>
+<td>Started on:</td><td>Sun Apr 14 12:14:26 ICT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>26 seconds (26440 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (151 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,248 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.facebook.register.Element_Undisplayed.beforeClass()'><b>beforeClass</b><br>Test class: com.facebook.register.Element_Undisplayed</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problem: 
+	The method longStackTrace(Throwable, boolean) is undefined for the type Utils
+
+	at commons.MethodListener.afterInvocation(MethodListener.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1547398254", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1547398254'><pre>java.lang.Error: Unresolved compilation problem: 
+	The method longStackTrace(Throwable, boolean) is undefined for the type Utils
+
+	at commons.MethodListener.afterInvocation(MethodListener.java:39)
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:60)
+	at org.testng.internal.BaseInvoker.runInvokedMethodListeners(BaseInvoker.java:56)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:285)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>-1713071666</td>
+<td>com.facebook.register.Element_Undisplayed@6d1ef78d</td></tr>
+<tr>
+<td title='com.facebook.register.Element_Undisplayed.afterClass()'><b>afterClass</b><br>Test class: com.facebook.register.Element_Undisplayed</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problem: 
+	The method longStackTrace(Throwable, boolean) is undefined for the type Utils
+
+	at commons.MethodListener.afterInvocation(MethodListener.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace105966264", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace105966264'><pre>java.lang.Error: Unresolved compilation problem: 
+	The method longStackTrace(Throwable, boolean) is undefined for the type Utils
+
+	at commons.MethodListener.afterInvocation(MethodListener.java:39)
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:60)
+	at org.testng.internal.BaseInvoker.runInvokedMethodListeners(BaseInvoker.java:56)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:285)
+	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>-1713071666</td>
+<td>com.facebook.register.Element_Undisplayed@6d1ef78d</td></tr>
+<tr>
+<td title='com.facebook.register.Element_Undisplayed.initBeforeSuite()'><b>initBeforeSuite</b><br>Test class: com.facebook.register.Element_Undisplayed</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problem: 
+	The method longStackTrace(Throwable, boolean) is undefined for the type Utils
+
+	at commons.MethodListener.afterInvocation(MethodListener.java:39)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace504336483", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace504336483'><pre>java.lang.Error: Unresolved compilation problem: 
+	The method longStackTrace(Throwable, boolean) is undefined for the type Utils
+
+	at commons.MethodListener.afterInvocation(MethodListener.java:39)
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:60)
+	at org.testng.internal.BaseInvoker.runInvokedMethodListeners(BaseInvoker.java:56)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:317)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.facebook.register.Element_Undisplayed@6d1ef78d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.facebook.register.Element_Undisplayed.TC_02_Verify_Element_Undisplayed_In_DOM()'><b>TC_02_Verify_Element_Undisplayed_In_DOM</b><br>Test class: com.facebook.register.Element_Undisplayed</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problem: 
+	The method longStackTrace(Throwable, boolean) is undefined for the type Utils
+
+	at commons.MethodListener.afterInvocation(MethodListener.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace597364637", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace597364637'><pre>java.lang.Error: Unresolved compilation problem: 
+	The method longStackTrace(Throwable, boolean) is undefined for the type Utils
+
+	at commons.MethodListener.afterInvocation(MethodListener.java:39)
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:60)
+	at org.testng.internal.BaseInvoker.runInvokedMethodListeners(BaseInvoker.java:56)
+	at org.testng.internal.TestInvoker.invokeListenersForSkippedTestResult(TestInvoker.java:445)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:545)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.facebook.register.Element_Undisplayed@6d1ef78d</td></tr>
+<tr>
+<td title='com.facebook.register.Element_Undisplayed.TC_01_Verify_Element_Displayed()'><b>TC_01_Verify_Element_Displayed</b><br>Test class: com.facebook.register.Element_Undisplayed</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problem: 
+	The method longStackTrace(Throwable, boolean) is undefined for the type Utils
+
+	at commons.MethodListener.afterInvocation(MethodListener.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace104261836", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace104261836'><pre>java.lang.Error: Unresolved compilation problem: 
+	The method longStackTrace(Throwable, boolean) is undefined for the type Utils
+
+	at commons.MethodListener.afterInvocation(MethodListener.java:39)
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:60)
+	at org.testng.internal.BaseInvoker.runInvokedMethodListeners(BaseInvoker.java:56)
+	at org.testng.internal.TestInvoker.invokeListenersForSkippedTestResult(TestInvoker.java:445)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:545)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.facebook.register.Element_Undisplayed@6d1ef78d</td></tr>
+<tr>
+<td title='com.facebook.register.Element_Undisplayed.TC_03_Verify_Element_Undisplayed_Not_In_DOM()'><b>TC_03_Verify_Element_Undisplayed_Not_In_DOM</b><br>Test class: com.facebook.register.Element_Undisplayed</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problem: 
+	The method longStackTrace(Throwable, boolean) is undefined for the type Utils
+
+	at commons.MethodListener.afterInvocation(MethodListener.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace515273883", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace515273883'><pre>java.lang.Error: Unresolved compilation problem: 
+	The method longStackTrace(Throwable, boolean) is undefined for the type Utils
+
+	at commons.MethodListener.afterInvocation(MethodListener.java:39)
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:60)
+	at org.testng.internal.BaseInvoker.runInvokedMethodListeners(BaseInvoker.java:56)
+	at org.testng.internal.TestInvoker.invokeListenersForSkippedTestResult(TestInvoker.java:445)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:545)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.facebook.register.Element_Undisplayed@6d1ef78d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
@@ -76,19 +316,112 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.facebook.register.Element_Undisplayed.TC_01_Verify_Element_Displayed()'><b>TC_01_Verify_Element_Displayed</b><br>Test class: com.facebook.register.Element_Undisplayed</td>
-<td></td>
-<td>5</td>
-<td>com.facebook.register.Element_Undisplayed@c86b9e3</td></tr>
-<tr>
-<td title='com.facebook.register.Element_Undisplayed.TC_02_Verify_Element_Undisplayed_In_DOM()'><b>TC_02_Verify_Element_Undisplayed_In_DOM</b><br>Test class: com.facebook.register.Element_Undisplayed</td>
-<td></td>
-<td>3</td>
-<td>com.facebook.register.Element_Undisplayed@c86b9e3</td></tr>
+<td><div><pre>java.lang.Error: Unresolved compilation problem: 
+	The method longStackTrace(Throwable, boolean) is undefined for the type Utils
+
+	at commons.MethodListener.afterInvocation(MethodListener.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1456061400", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1456061400'><pre>java.lang.Error: Unresolved compilation problem: 
+	The method longStackTrace(Throwable, boolean) is undefined for the type Utils
+
+	at commons.MethodListener.afterInvocation(MethodListener.java:39)
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:60)
+	at org.testng.internal.BaseInvoker.runInvokedMethodListeners(BaseInvoker.java:56)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:285)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.facebook.register.Element_Undisplayed@6d1ef78d</td></tr>
 <tr>
 <td title='com.facebook.register.Element_Undisplayed.TC_03_Verify_Element_Undisplayed_Not_In_DOM()'><b>TC_03_Verify_Element_Undisplayed_Not_In_DOM</b><br>Test class: com.facebook.register.Element_Undisplayed</td>
-<td></td>
-<td>8</td>
-<td>com.facebook.register.Element_Undisplayed@c86b9e3</td></tr>
+<td><div><pre>java.lang.Error: Unresolved compilation problem: 
+	The method longStackTrace(Throwable, boolean) is undefined for the type Utils
+
+	at commons.MethodListener.afterInvocation(MethodListener.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1637613097", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1637613097'><pre>java.lang.Error: Unresolved compilation problem: 
+	The method longStackTrace(Throwable, boolean) is undefined for the type Utils
+
+	at commons.MethodListener.afterInvocation(MethodListener.java:39)
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:60)
+	at org.testng.internal.BaseInvoker.runInvokedMethodListeners(BaseInvoker.java:56)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:285)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.facebook.register.Element_Undisplayed@6d1ef78d</td></tr>
+<tr>
+<td title='com.facebook.register.Element_Undisplayed.TC_02_Verify_Element_Undisplayed_In_DOM()'><b>TC_02_Verify_Element_Undisplayed_In_DOM</b><br>Test class: com.facebook.register.Element_Undisplayed</td>
+<td><div><pre>java.lang.Error: Unresolved compilation problem: 
+	The method longStackTrace(Throwable, boolean) is undefined for the type Utils
+
+	at commons.MethodListener.afterInvocation(MethodListener.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 20 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace351656492", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace351656492'><pre>java.lang.Error: Unresolved compilation problem: 
+	The method longStackTrace(Throwable, boolean) is undefined for the type Utils
+
+	at commons.MethodListener.afterInvocation(MethodListener.java:39)
+	at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:60)
+	at org.testng.internal.BaseInvoker.runInvokedMethodListeners(BaseInvoker.java:56)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:285)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>com.facebook.register.Element_Undisplayed@6d1ef78d</td></tr>
 </table><p>
 </body>
 </html>

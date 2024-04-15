@@ -45,7 +45,7 @@ public class Custom_Close_Driver extends BaseTest {
 		log.info("Register - Step 03: Click to Register button");
 		registerPage.clickToRegisterButton();
 		log.info("Register - Step 04: Verify success message displayed");
-		verifyEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed..");
+		Assert.assertEquals(registerPage.getRegisterSuccessMessage(), "Your registration completed..");
 		log.info("Register - Step 05: Click to logout");
 		homePage = registerPage.clickLinkRegister();
 		
@@ -74,8 +74,8 @@ public class Custom_Close_Driver extends BaseTest {
 	}
 	
 	
-	@AfterClass
+	@AfterClass(alwaysRun = true)
 	public void afterClass() {
-		driver.quit();
+		closeBrowserDriver();
 	}
 }
