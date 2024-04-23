@@ -281,3 +281,17 @@
 [INFO ] [2024-04-15 11:19:37,499] - MyAccount - Step 03: Verify 'Email' value is correctly
 [INFO ] [2024-04-15 11:19:37,562] - OS name = windows 10
 [INFO ] [2024-04-15 11:19:37,562] - Driver instance name = chromedriver: chrome on windows (3cc33518e8171b69ef24c82f09a205b7)
+[INFO ] [2024-04-16 23:49:46,441] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-16 23:49:47,453] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-16 23:49:47,902] - Login - Step 03: Click to login button
+[INFO ] [2024-04-16 23:49:48,667] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-04-16 23:49:48,775] - Login - Step 05: Navigate to 'My account' page
+[INFO ] [2024-04-16 23:49:49,326] - Login - Step 06: Verify 'Customer info' page is displayed
+[INFO ] [2024-04-17 01:34:59,260] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-17 01:35:00,290] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-17 01:41:06,410] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-17 01:41:07,810] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-17 01:42:33,077] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-17 01:42:34,360] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-17 01:42:34,713] - Login - Step 03: Click to login button
+[INFO ] [2024-04-17 01:42:35,459] - Login - Step 05: Verify my account link is displayed

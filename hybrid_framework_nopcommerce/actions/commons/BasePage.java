@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -26,6 +27,8 @@ import pageObjects.nopCommerce.portal.UserCustomerInfoPageObject;
 import pageObjects.nopCommerce.portal.UserHomePageObject;
 import pageObjects.nopCommerce.portal.UserMyProductReviewPageObject;
 import pageObjects.nopCommerce.portal.UserRewardPointPageObject;
+import pageObjects.wordpress.AdminDashboardPageObject;
+import pageObjects.wordpress.UserHomePO;
 import pageUIs.jquery.uploadfile.BasePageJqueryUI;
 import pageUIs.jquery.uploadfile.HomePageUI;
 import pageUIs.nopEcommerce.user.BasePageNopCommerceUI;
@@ -61,6 +64,16 @@ public class BasePage {
 	
 	public void refreshCurrentPage(WebDriver driver) {
 		driver.navigate().refresh();
+	}
+	
+	public Set<Cookie> getAllCookies(WebDriver driver){
+		return driver.manage().getCookies();
+	}
+	
+	public void setCookies(WebDriver driver, Set<Cookie> cookies) {
+		for(Cookie cookie:cookies) {
+			driver.manage().addCookie(cookie);
+		}
 	}
 	
 	public Alert waitForAlertPresence(WebDriver driver) {
@@ -169,6 +182,11 @@ public class BasePage {
 	public void sendKeyToElement(WebDriver driver, String locator, String text) {
 		getWebElement(driver,locator).clear();
 		getWebElement(driver,locator).sendKeys(text);
+	}
+	
+	public void clearValueInElementByDeleteKey(WebDriver driver, String locatorType) {
+		WebElement ele = this.getWebElement(driver, locatorType);
+		ele.sendKeys(Keys.chord(Keys.CONTROL,"a",Keys.DELETE));
 	}
 	
 	public void sendKeyToElement(WebDriver driver, String locatorType, String textValue, String... dynamicValues) {
@@ -299,6 +317,23 @@ public class BasePage {
 	public boolean isElementUndisplayed(WebDriver driver, String locator) {
 		overrideGlobalTimeout(driver, shortTimeout);
 		List<WebElement> elements = getListWebElement(driver,locator);
+		
+		// Nếu như mình gán =5 apply cho tất cả các step về sau đó: findElement/ findElements
+		overrideGlobalTimeout(driver, longTimeout);
+		
+		if(elements.size() == 0) {
+			System.out.println("Case 3 - Element ko có trong DOM");
+			System.out.println("End time = "+ new Date().toString());
+			return true;
+		}else {
+			System.out.println("Case 1 - Element có trong DOM và displayed");
+			return false;
+		}
+	}
+	
+	public boolean isElementUndisplayed(WebDriver driver, String locator, String...dynamicValues) {
+		overrideGlobalTimeout(driver, shortTimeout);
+		List<WebElement> elements = getListWebElement(driver,getDynamicXpath(locator,dynamicValues));
 		
 		// Nếu như mình gán =5 apply cho tất cả các step về sau đó: findElement/ findElements
 		overrideGlobalTimeout(driver, longTimeout);
@@ -603,7 +638,15 @@ public class BasePage {
 		return PageGeneratorManager.getAdminLoginPage(driver);
 	}
 	
+	public UserHomePO openEndUserSite(WebDriver driver, String endUserUrl) {
+		openPageUrl(driver, endUserUrl);
+		return pageObjects.wordpress.PageGeneratorManager.getUserHomePage(driver);
+	}
 	
+	public AdminDashboardPageObject openAdminSite(WebDriver driver, String adminUrl) {
+		openPageUrl(driver, adminUrl);
+		return pageObjects.wordpress.PageGeneratorManager.getAdminDashboardPage(driver);
+	}
 	
 	private long shortTimeout = GlobalConstant.SHORT_TIMEOUT;
 	private long longTimeout = GlobalConstant.LONG_TIMEOUT;
