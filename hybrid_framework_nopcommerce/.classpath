@@ -55,5 +55,11 @@
 	<classpathentry kind="lib" path="libAllure/tika-core-1.20.jar"/>
 	<classpathentry kind="lib" path="libExtentReportV4/extentreports-4.0.9.jar"/>
 	<classpathentry kind="lib" path="libraries/joda-time-2.4.jar"/>
+	<classpathentry kind="lib" path="libFaker/generex-1.0.2.jar"/>
+	<classpathentry kind="lib" path="libFaker/javafaker-1.0.1.jar"/>
+	<classpathentry kind="lib" path="libFaker/snakeyaml-1.23.jar"/>
+	<classpathentry kind="lib" path="libJackson/jackson-annotations-2.15.2.jar"/>
+	<classpathentry kind="lib" path="libJackson/jackson-core-2.15.2.jar"/>
+	<classpathentry kind="lib" path="libJackson/jackson-databind-2.15.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

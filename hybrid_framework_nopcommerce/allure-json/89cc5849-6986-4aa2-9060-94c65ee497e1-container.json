@@ -1,1 +1,0 @@
-{"uuid":"89cc5849-6986-4aa2-9060-94c65ee497e1","name":"Wordpress","children":["8dc79e25-279e-4aef-b444-dad1f932a775"],"befores":[{"name":"initBeforeSuite","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1713756487394,"stop":1713756487405}],"afters":[],"links":[],"start":1713756487377,"stop":1713756496170}

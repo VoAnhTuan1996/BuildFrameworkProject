@@ -11,7 +11,7 @@
   <test name="Run on Firefox">
     <parameter name = "browser" value = "firefox"/>
     <classes>
-      <class name="com.nopcommerce.user.ReportNG_Screenshot"/>
+      <class name="com.nopcommerce.user.Pattern_Object"/>
     </classes>
   </test> <!-- Test -->
   

@@ -4,10 +4,10 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="0.078">
+           time="0.081">
   <properties />
   
   
-            <testcase name="Search" time="0.078" classname="com.nopcommerce.user.Share_Data" />
+            <testcase name="Search" time="0.081" classname="com.nopcommerce.user.Share_Data" />
       
 </testsuite>

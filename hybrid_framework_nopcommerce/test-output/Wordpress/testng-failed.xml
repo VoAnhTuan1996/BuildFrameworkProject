@@ -21,7 +21,6 @@
           <include name="Edit_Post"/>
           <include name="Search_Post"/>
           <include name="beforeClass"/>
-          <include name="View_Post"/>
         </methods>
       </class> <!-- com.wordpress.posts.Post01_Create_Read_Update_Delete_Search -->
     </classes>

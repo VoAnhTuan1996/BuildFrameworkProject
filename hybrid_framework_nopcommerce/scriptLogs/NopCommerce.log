@@ -295,3 +295,87 @@
 [INFO ] [2024-04-17 01:42:34,360] - Login - Step 02: Enter to email and password textbox
 [INFO ] [2024-04-17 01:42:34,713] - Login - Step 03: Click to login button
 [INFO ] [2024-04-17 01:42:35,459] - Login - Step 05: Verify my account link is displayed
+[INFO ] [2024-04-24 11:10:15,640] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-24 11:10:16,830] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-24 11:10:17,124] - Login - Step 03: Click to login button
+[INFO ] [2024-04-24 11:10:17,524] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-04-24 11:11:05,414] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-24 11:11:07,104] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-24 11:11:11,529] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-24 11:11:12,195] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-24 11:11:12,346] - Register - Step 05: Click to logout
+[INFO ] [2024-04-24 11:11:12,931] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-24 11:11:13,416] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-24 11:11:13,614] - Login - Step 03: Click to login button
+[INFO ] [2024-04-24 11:11:14,251] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-04-24 11:11:14,957] - MyAccount - Step 01: Navigate to 'My Account' page
+[INFO ] [2024-04-24 11:11:15,328] - MyAccount - Step 02: Verify 'Customer Info' page is displayed
+[INFO ] [2024-04-24 11:11:15,497] - MyAccount - Step 03: Verify 'First Name' value is correctly
+[INFO ] [2024-04-24 11:11:15,534] - MyAccount - Step 04: Verify 'Last Name' value is correctly
+[INFO ] [2024-04-24 11:11:15,575] - MyAccount - Step 03: Verify 'Email' value is correctly
+[INFO ] [2024-04-24 11:11:15,645] - OS name = windows 10
+[INFO ] [2024-04-24 11:11:15,645] - Driver instance name = firefoxdriver: firefox on windows (6736d20c-207e-4279-8c5e-c052b7b059a4)
+[INFO ] [2024-04-26 22:16:35,310] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-26 22:16:36,481] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-26 22:16:36,849] - Login - Step 03: Click to login button
+[INFO ] [2024-04-26 22:16:37,613] - Login - Step 05: Verify my account link is displayed
+[INFO ] [2024-04-29 02:00:15,971] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-29 02:00:16,751] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-29 02:01:23,795] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-29 02:01:23,836] - OS name = windows 10
+[INFO ] [2024-04-29 02:01:23,836] - Driver instance name = chromedriver: chrome on windows (3cb0b02d5d6e30684e94fbd5d89b0d83)
+[INFO ] [2024-04-29 02:01:23,845] - disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=120.0.6099.225)
+Build info: version: '4.18.0', revision: 'b6bf9de7cc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3cb0b02d5d6e30684e94fbd5d89b0d83, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55013}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55013/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3cb0b02d5d6e30684e94fbd5d89b0d83
+[INFO ] [2024-04-29 02:02:42,329] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-29 02:02:43,067] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-29 02:02:47,476] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-29 02:02:48,153] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-29 02:02:48,298] - Register - Step 05: Click to logout
+[INFO ] [2024-04-29 02:02:48,839] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-29 02:02:49,249] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-29 02:02:49,593] - Login - Step 03: Click to login button
+[INFO ] [2024-04-29 02:02:50,244] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-04-29 02:02:50,885] - OS name = windows 10
+[INFO ] [2024-04-29 02:02:50,885] - Driver instance name = chromedriver: chrome on windows (072db101943e19537f35a4652894d16c)
+[INFO ] [2024-04-30 15:44:47,182] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-30 15:44:48,895] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-30 15:44:53,407] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-30 15:44:54,160] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-30 15:44:54,279] - Register - Step 05: Click to logout
+[INFO ] [2024-04-30 15:45:34,981] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-30 15:46:15,560] - OS name = windows 10
+[INFO ] [2024-04-30 15:46:15,561] - Driver instance name = chromedriver: chrome on windows (41201a527f1eb78a63a172c602878169)
+[INFO ] [2024-04-30 15:55:31,094] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-30 15:55:31,986] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-30 15:55:36,449] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-30 15:55:36,931] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-30 15:56:07,413] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-30 15:56:37,636] - OS name = windows 10
+[INFO ] [2024-04-30 15:56:37,637] - Driver instance name = chromedriver: chrome on windows (993e4ddaff5b08c1c5a0d8353502c154)
+[INFO ] [2024-04-30 15:56:37,640] - no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.225)
+Build info: version: '4.18.0', revision: 'b6bf9de7cc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [993e4ddaff5b08c1c5a0d8353502c154, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59986}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59986/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 993e4ddaff5b08c1c5a0d8353502c154
+[INFO ] [2024-04-30 15:59:52,071] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-04-30 15:59:53,399] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-04-30 15:59:57,838] - Register - Step 03: Click to Register button
+[INFO ] [2024-04-30 15:59:58,601] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-04-30 15:59:58,709] - Register - Step 05: Click to logout
+[INFO ] [2024-04-30 15:59:59,523] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-04-30 15:59:59,953] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-04-30 16:00:00,324] - Login - Step 03: Click to login button
+[INFO ] [2024-04-30 16:00:01,097] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-04-30 16:00:01,756] - OS name = windows 10
+[INFO ] [2024-04-30 16:00:01,756] - Driver instance name = chromedriver: chrome on windows (313528ff97885b7253041f4d1d20750a)

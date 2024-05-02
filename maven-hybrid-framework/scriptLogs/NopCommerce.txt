@@ -1,0 +1,2 @@
+[INFO ] [2024-05-02 02:44:45,048] - OS name = windows 10
+[INFO ] [2024-05-02 02:44:45,051] - Cannot invoke "Object.toString()" because "this.driver" is null
