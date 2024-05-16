@@ -4,11 +4,11 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="9.691">
+           time="8.956">
   <properties />
   
   
-            <testcase name="User_02_Login" time="2.231" classname="com.nopcommerce.user.Manage_Data" />
-                <testcase name="User01_Register" time="7.460" classname="com.nopcommerce.user.Manage_Data" />
+            <testcase name="User01_Register" time="6.996" classname="com.nopcommerce.user.Manage_Data" />
+                <testcase name="User_02_Login" time="1.960" classname="com.nopcommerce.user.Manage_Data" />
       
 </testsuite>

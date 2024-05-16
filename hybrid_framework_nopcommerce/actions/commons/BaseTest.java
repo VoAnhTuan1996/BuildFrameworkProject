@@ -71,22 +71,65 @@ public class BaseTest {
 		return driver;
 	}
 	
-	protected WebDriver getBrowserDriver(String browserName, String appUrl) {
-		if(browserName.equals("firefox")) {
-			driver = new FirefoxDriver();
-		}else if(browserName.equals("chrome")) {
-			//System.setProperty("webdriver.chrome.driver", projectPath + "\\browserDrivers\\chromedriver.exe");
-			driver = new ChromeDriver();
-		}else {
-			throw new RuntimeException("Browser name invalid.");
-		}
-		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
-		driver.get(appUrl);
-		return driver;
-	}
 	
+//	  protected WebDriver getBrowserDriver(String browserName, String environmentName) {
+//		  if(browserName.equals("firefox"))
+//		  {
+//			  driver = new FirefoxDriver();
+//		  }
+//		  else if(browserName.equals("chrome")){
+//			  //System.setProperty("webdriver.chrome.driver", GlobalConstant.PROJECT_PATH + "\\browserDrivers\\chromedriver.exe"); 
+//			  driver = new ChromeDriver();
+//		  }else {
+//			  throw new RuntimeException("Browser name invalid.");
+//		  }
+//		  driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+//		  driver.get(getEnvironmentUrl(environmentName)); return driver;
+//	  }
+	 
+	
+	
+	  protected WebDriver getBrowserDriver(String browserName, String appUrl) {
+		  if(browserName.equals("firefox")) {
+			  driver = new FirefoxDriver(); 
+		  }else if(browserName.equals("chrome")) {
+			  driver = new ChromeDriver();
+		  }else {
+			  throw new RuntimeException("Browser name invalid.");
+		  }
+		  driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		  driver.get(appUrl); return driver;
+	}
+	 	
 	public WebDriver getDriverInstance() {
 		return this.driver;
+	}
+	
+	protected String getEnvironmentUrl(String serverName) {
+		String envUrl = null;
+		EnvironmentList environment = EnvironmentList.valueOf(serverName.toUpperCase());
+		
+		switch (environment) {
+		case DEV:
+			envUrl = "https://demo.nopcommerce.com/";
+			break;
+		case TESTING:
+			envUrl = "https://testing.nopcommerce.com/";
+			break;
+		case STAGING:
+			envUrl = "https://staging.nopcommerce.com/";
+			break;
+		case PRE_PRODUCTION:
+			envUrl = "https://pre-prod.nopcommerce.com/";
+			break;
+		case PRODUCTION:
+			envUrl = "https://prod.nopcommerce.com/";
+			break;
+		default:
+			envUrl = null;
+			break;
+		}
+		return envUrl;
 	}
 	
 	protected boolean verifyTrue(boolean condition) {

@@ -379,3 +379,148 @@ Session ID: 993e4ddaff5b08c1c5a0d8353502c154
 [INFO ] [2024-04-30 16:00:01,097] - Login - Step 04: Verify my account link is displayed
 [INFO ] [2024-04-30 16:00:01,756] - OS name = windows 10
 [INFO ] [2024-04-30 16:00:01,756] - Driver instance name = chromedriver: chrome on windows (313528ff97885b7253041f4d1d20750a)
+[INFO ] [2024-05-03 15:32:52,308] - OS name = windows 10
+[INFO ] [2024-05-03 15:32:52,310] - Driver instance name = chromedriver: chrome on windows (08d145d06f09172a6eb94ce6640981c1)
+[INFO ] [2024-05-03 15:39:14,727] - OS name = windows 10
+[INFO ] [2024-05-03 15:39:14,729] - Driver instance name = chromedriver: chrome on windows (dba662a72e45890e2cc731694e918051)
+[INFO ] [2024-05-03 15:46:14,873] - OS name = windows 10
+[INFO ] [2024-05-03 15:46:14,875] - Driver instance name = chromedriver: chrome on windows (89155f8d3e51970b45fe4d6b13e1dfb9)
+[INFO ] [2024-05-03 15:47:13,043] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-05-03 15:47:13,865] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-05-03 15:47:14,166] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-05-03 15:47:14,618] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-05-03 15:47:15,002] - Login - Step 03: Click to login button
+[INFO ] [2024-05-03 15:47:15,512] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-05-03 15:47:45,968] - OS name = windows 10
+[INFO ] [2024-05-03 15:47:45,968] - Driver instance name = chromedriver: chrome on windows (6ecbe4ee49e7175638caf8c2f72942cf)
+[INFO ] [2024-05-03 15:47:46,000] - no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.225)
+Build info: version: '4.18.0', revision: 'b6bf9de7cc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6ecbe4ee49e7175638caf8c2f72942cf, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51387}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51387/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6ecbe4ee49e7175638caf8c2f72942cf
+[INFO ] [2024-05-03 15:48:09,011] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-05-03 15:48:10,579] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-05-03 15:48:10,838] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-05-03 15:48:11,435] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-05-03 15:48:11,796] - Login - Step 03: Click to login button
+[INFO ] [2024-05-03 15:48:12,298] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-05-03 15:48:28,839] - OS name = windows 10
+[INFO ] [2024-05-03 15:48:28,840] - Driver instance name = chromedriver: chrome on windows (874b540a1bf9c8e41c0263173b99f573)
+[INFO ] [2024-05-03 15:48:28,915] - disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=120.0.6099.225)
+Build info: version: '4.18.0', revision: 'b6bf9de7cc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [874b540a1bf9c8e41c0263173b99f573, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51453}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51453/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 874b540a1bf9c8e41c0263173b99f573
+[INFO ] [2024-05-03 15:49:32,583] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-05-03 15:49:34,069] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-05-03 15:49:38,640] - Register - Step 03: Click to Register button
+[INFO ] [2024-05-03 15:49:39,358] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-05-03 15:49:39,472] - Register - Step 05: Click to logout
+[INFO ] [2024-05-03 15:49:40,308] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-05-03 15:49:40,756] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-05-03 15:49:41,094] - Login - Step 03: Click to login button
+[INFO ] [2024-05-03 15:49:41,851] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-05-03 15:49:42,494] - OS name = windows 10
+[INFO ] [2024-05-03 15:49:42,494] - Driver instance name = chromedriver: chrome on windows (aab86cc23d14aae6d7b3fbdd5ac95efb)
+[INFO ] [2024-05-03 22:35:32,794] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-05-03 22:35:34,377] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-05-03 22:35:38,912] - Register - Step 03: Click to Register button
+[INFO ] [2024-05-03 22:35:39,625] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-05-03 22:35:39,771] - Register - Step 05: Click to logout
+[INFO ] [2024-05-03 22:35:40,693] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-05-03 22:35:41,143] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-05-03 22:35:41,498] - Login - Step 03: Click to login button
+[INFO ] [2024-05-03 22:35:42,343] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-05-03 22:35:43,135] - OS name = windows 10
+[INFO ] [2024-05-03 22:35:43,136] - Driver instance name = chromedriver: chrome on windows (fd53113194037e9d7b6fde21ddbd8ce9)
+[INFO ] [2024-05-05 10:54:16,533] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-05-05 10:54:17,312] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-05-05 10:54:21,994] - Register - Step 03: Click to Register button
+[INFO ] [2024-05-05 10:54:22,646] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-05-05 10:54:22,757] - Register - Step 05: Click to logout
+[INFO ] [2024-05-05 10:54:23,533] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-05-05 10:54:23,934] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-05-05 10:54:24,255] - Login - Step 03: Click to login button
+[INFO ] [2024-05-05 10:54:24,873] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-05-05 10:54:25,500] - OS name = windows 10
+[INFO ] [2024-05-05 10:54:25,500] - Driver instance name = chromedriver: chrome on windows (487086d441a1013bc101feeecbb63b3d)
+[INFO ] [2024-05-08 00:46:27,406] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-05-08 00:46:28,242] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-05-08 00:46:32,652] - Register - Step 03: Click to Register button
+[INFO ] [2024-05-08 00:46:33,413] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-05-08 00:46:33,496] - Register - Step 05: Click to logout
+[INFO ] [2024-05-08 00:46:34,374] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-05-08 00:46:34,838] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-05-08 00:46:35,158] - Login - Step 03: Click to login button
+[INFO ] [2024-05-08 00:46:35,908] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-05-08 00:46:36,564] - OS name = windows 10
+[INFO ] [2024-05-08 00:46:36,564] - Driver instance name = chromedriver: chrome on windows (a6734089fc699a8781f62b42fdf5e27b)
+[INFO ] [2024-05-08 00:47:23,431] - OS name = windows 10
+[INFO ] [2024-05-08 00:47:23,435] - Cannot invoke "Object.toString()" because "this.driver" is null
+[INFO ] [2024-05-08 00:48:01,515] - OS name = windows 10
+[INFO ] [2024-05-08 00:48:01,518] - Cannot invoke "Object.toString()" because "this.driver" is null
+[INFO ] [2024-05-08 00:51:31,085] - OS name = windows 10
+[INFO ] [2024-05-08 00:51:31,087] - Cannot invoke "Object.toString()" because "this.driver" is null
+[INFO ] [2024-05-08 00:54:16,279] - OS name = windows 10
+[INFO ] [2024-05-08 00:54:16,282] - Cannot invoke "Object.toString()" because "this.driver" is null
+[INFO ] [2024-05-08 00:57:15,096] - OS name = windows 10
+[INFO ] [2024-05-08 00:57:15,097] - Driver instance name = chromedriver: chrome on windows (26e9061615c02b23e824fac9b23c7504)
+[INFO ] [2024-05-08 23:58:08,205] - OS name = windows 10
+[INFO ] [2024-05-08 23:58:08,208] - Cannot invoke "Object.toString()" because "this.driver" is null
+[INFO ] [2024-05-08 23:58:46,681] - OS name = windows 10
+[INFO ] [2024-05-08 23:58:46,683] - Driver instance name = chromedriver: chrome on windows (cd6d5362bb0b9fefc3a2ba584bfbf905)
+[INFO ] [2024-05-08 23:59:22,114] - OS name = windows 10
+[INFO ] [2024-05-08 23:59:22,116] - Driver instance name = chromedriver: chrome on windows (fe394acd7ff662181858807713d0ccf9)
+[INFO ] [2024-05-09 00:15:28,019] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-05-09 00:15:28,854] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-05-09 00:15:33,301] - Register - Step 03: Click to Register button
+[INFO ] [2024-05-09 00:15:33,998] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-05-09 00:15:34,143] - Register - Step 05: Click to logout
+[INFO ] [2024-05-09 00:15:34,964] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-05-09 00:15:35,447] - Login - Step 02: Enter to email and password textbox
+[INFO ] [2024-05-09 00:15:35,756] - Login - Step 03: Click to login button
+[INFO ] [2024-05-09 00:15:36,503] - Login - Step 04: Verify my account link is displayed
+[INFO ] [2024-05-09 00:15:37,114] - OS name = windows 10
+[INFO ] [2024-05-09 00:15:37,114] - Driver instance name = chromedriver: chrome on windows (f3a759991b66a699a67cbf1ee52665c7)
+[INFO ] [2024-05-09 00:17:53,161] - OS name = windows 10
+[INFO ] [2024-05-09 00:17:53,163] - Cannot invoke "Object.toString()" because "this.driver" is null
+[INFO ] [2024-05-09 00:18:33,281] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-05-09 00:18:34,807] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-05-09 00:18:39,726] - Register - Step 03: Click to Register button
+[INFO ] [2024-05-09 00:18:40,209] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-05-09 00:19:10,617] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-05-09 00:19:40,716] - OS name = windows 10
+[INFO ] [2024-05-09 00:19:40,716] - Driver instance name = chromedriver: chrome on windows (d8847e239ba03306540b887c5930954b)
+[INFO ] [2024-05-09 00:19:40,720] - no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.225)
+Build info: version: '4.18.0', revision: 'b6bf9de7cc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d8847e239ba03306540b887c5930954b, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61383}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61383/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d8847e239ba03306540b887c5930954b
+[INFO ] [2024-05-09 00:32:14,537] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-05-09 00:32:15,866] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-05-09 00:32:20,275] - Register - Step 03: Click to Register button
+[INFO ] [2024-05-09 00:32:20,791] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-05-09 00:32:51,172] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-05-09 00:33:21,407] - OS name = windows 10
+[INFO ] [2024-05-09 00:33:21,407] - Driver instance name = chromedriver: chrome on windows (bbc632904d9a3ecfb6533183fe11c613)
+[INFO ] [2024-05-09 00:33:21,410] - no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.225)
+Build info: version: '4.18.0', revision: 'b6bf9de7cc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bbc632904d9a3ecfb6533183fe11c613, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61754}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61754/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bbc632904d9a3ecfb6533183fe11c613

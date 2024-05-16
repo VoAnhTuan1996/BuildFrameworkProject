@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [NopCommerce - User]">
-  <parameter name="environment" value="DEV"/>
   <listeners>
     <listener class-name="commons.MethodListener"/>
     <listener class-name="reportConfigs.ExtentTestListener"/>
@@ -11,15 +10,15 @@
   <test thread-count="5" name="Run on CHROME(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.nopcommerce.user.Manage_Data">
+      <class name="com.nopcommerce.user.Multiple_Environment_Owner">
         <methods>
-          <include name="afterClass"/>
           <include name="initBeforeSuite"/>
-          <include name="beforeClass"/>
-          <include name="User01_Register"/>
+          <include name="afterClass"/>
           <include name="User_02_Login"/>
+          <include name="User01_Register"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.nopcommerce.user.Manage_Data -->
+      </class> <!-- com.nopcommerce.user.Multiple_Environment_Owner -->
     </classes>
   </test> <!-- Run on CHROME(failed) -->
 </suite> <!-- Failed suite [NopCommerce - User] -->

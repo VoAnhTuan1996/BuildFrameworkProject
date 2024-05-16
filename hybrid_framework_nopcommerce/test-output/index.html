@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-NopCommerce___User" class="navigator-link">
-              <span class="suite-name border-passed">NopCommerce - User</span>
+              <span class="suite-name border-failed">NopCommerce - User</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,26 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-NopCommerce___User" class="hide-methods passed suite-NopCommerce___User"> (hide)</a> <!-- hide-methods passed suite-NopCommerce___User -->
-                      <a href="#" panel-name="suite-NopCommerce___User" class="show-methods passed suite-NopCommerce___User"> (show)</a> <!-- show-methods passed suite-NopCommerce___User -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-NopCommerce___User" class="hide-methods failed suite-NopCommerce___User"> (hide)</a> <!-- hide-methods failed suite-NopCommerce___User -->
+                      <a href="#" panel-name="suite-NopCommerce___User" class="show-methods failed suite-NopCommerce___User"> (show)</a> <!-- show-methods failed suite-NopCommerce___User -->
                     </span>
-                    <div class="method-list-content passed suite-NopCommerce___User">
+                    <div class="method-list-content failed suite-NopCommerce___User">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-NopCommerce___User" title="com.nopcommerce.user.Manage_Data" class="method navigator-link" hash-for-method="User01_Register">User01_Register</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-NopCommerce___User" title="com.nopcommerce.user.Multiple_Environment_Owner" class="method navigator-link" hash-for-method="User01_Register">User01_Register</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-NopCommerce___User" title="com.nopcommerce.user.Manage_Data" class="method navigator-link" hash-for-method="User_02_Login">User_02_Login</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-NopCommerce___User" title="com.nopcommerce.user.Multiple_Environment_Owner" class="method navigator-link" hash-for-method="User_02_Login">User_02_Login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-NopCommerce___User -->
+                    </div> <!-- method-list-content failed suite-NopCommerce___User -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -124,10 +124,10 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-NopCommerce___User" class="panel NopCommerce___User">
-          <div class="suite-NopCommerce___User-class-passed">
+          <div class="suite-NopCommerce___User-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.nopcommerce.user.Manage_Data</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.nopcommerce.user.Multiple_Environment_Owner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -135,6 +135,39 @@
                   <a name="User01_Register">
                   </a> <!-- User01_Register -->
                   <span class="method-name">User01_Register</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class=&apos;result&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at commons.BasePage.waitForElementVisible(BasePage.java:463)
+	at pageObjects.nopCommerce.portal.UserRegisterPageObject.getRegisterSuccessMessage(UserRegisterPageObject.java:45)
+	at com.nopcommerce.user.Multiple_Environment_Owner.User01_Register(Multiple_Environment_Owner.java:96)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.225)
+Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bbc632904d9a3ecfb6533183fe11c613, findElement {value=//div[@class=&apos;result&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61754}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61754/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bbc632904d9a3ecfb6533183fe11c613
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 31 more
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -142,10 +175,45 @@
                   <a name="User_02_Login">
                   </a> <!-- User_02_Login -->
                   <span class="method-name">User_02_Login</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: a[class=&apos;ico-login&apos;] (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at commons.BasePage.waitForElementClickable(BasePage.java:510)
+	at pageObjects.nopCommerce.portal.UserHomePageObject.clickToLoginLink(UserHomePageObject.java:23)
+	at com.nopcommerce.user.Multiple_Environment_Owner.User_02_Login(Multiple_Environment_Owner.java:105)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.225)
+Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bbc632904d9a3ecfb6533183fe11c613, findElement {value=a[class=&apos;ico-login&apos;], using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61754}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61754/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bbc632904d9a3ecfb6533183fe11c613
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:627)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:624)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 31 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-NopCommerce___User-class-passed -->
+          </div> <!-- suite-NopCommerce___User-class-failed -->
         </div> <!-- panel NopCommerce___User -->
         <div panel-name="test-xml-NopCommerce___User" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -156,7 +224,6 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;NopCommerce - User&quot;&gt;
-  &lt;parameter name=&quot;environment&quot; value=&quot;DEV&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;commons.MethodListener&quot;/&gt;
     &lt;listener class-name=&quot;reportConfigs.ExtentTestListener&quot;/&gt;
@@ -166,7 +233,7 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Run on CHROME&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.nopcommerce.user.Manage_Data&quot;/&gt;
+      &lt;class name=&quot;com.nopcommerce.user.Multiple_Environment_Owner&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Run on CHROME --&gt;
 &lt;/suite&gt; &lt;!-- NopCommerce - User --&gt;
@@ -209,17 +276,17 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'User01_Register')
-data.setCell(0, 2, 'com.nopcommerce.user.Manage_Data')
-data.setCell(0, 3, 7460);
+data.setCell(0, 2, 'com.nopcommerce.user.Multiple_Environment_Owner')
+data.setCell(0, 3, 36594);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'User_02_Login')
-data.setCell(1, 2, 'com.nopcommerce.user.Manage_Data')
-data.setCell(1, 3, 2231);
+data.setCell(1, 2, 'com.nopcommerce.user.Multiple_Environment_Owner')
+data.setCell(1, 3, 30232);
 window.suiteTableData['NopCommerce___User']= { tableData: data, tableDiv: 'times-div-NopCommerce___User'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-NopCommerce___User">
               </div> <!-- times-div-NopCommerce___User -->
             </div> <!-- times-div -->
@@ -231,30 +298,22 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">User_02_Login</span>
+              <span class="reporter-method-name">User01_Register</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">[INFO ] [2024-04-30 15:59:59,523] - Login - Step 01: Navigate to Login page
+                <span class="reporter-method-output">[INFO ] [2024-05-09 00:32:14,537] - Register - Step 01: Navigate to 'Register' page
 <br></span>
-                <span class="reporter-method-output">[INFO ] [2024-04-30 15:59:59,953] - Login - Step 02: Enter to email and password textbox
+                <span class="reporter-method-output">[INFO ] [2024-05-09 00:32:15,866] - Register - Step 02: Enter to all fields information
 <br></span>
-                <span class="reporter-method-output">[INFO ] [2024-04-30 16:00:00,324] - Login - Step 03: Click to login button
+                <span class="reporter-method-output">[INFO ] [2024-05-09 00:32:20,275] - Register - Step 03: Click to Register button
 <br></span>
-                <span class="reporter-method-output">[INFO ] [2024-04-30 16:00:01,097] - Login - Step 04: Verify my account link is displayed
+                <span class="reporter-method-output">[INFO ] [2024-05-09 00:32:20,791] - Register - Step 04: Verify success message displayed
 <br></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">User01_Register</span>
+              <span class="reporter-method-name">User_02_Login</span>
               <div class="reporter-method-output-div">
-                <span class="reporter-method-output">[INFO ] [2024-04-30 15:59:52,071] - Register - Step 01: Navigate to 'Register' page
-<br></span>
-                <span class="reporter-method-output">[INFO ] [2024-04-30 15:59:53,399] - Register - Step 02: Enter to all fields information
-<br></span>
-                <span class="reporter-method-output">[INFO ] [2024-04-30 15:59:57,838] - Register - Step 03: Click to Register button
-<br></span>
-                <span class="reporter-method-output">[INFO ] [2024-04-30 15:59:58,601] - Register - Step 04: Verify success message displayed
-<br></span>
-                <span class="reporter-method-output">[INFO ] [2024-04-30 15:59:58,709] - Register - Step 05: Click to logout
+                <span class="reporter-method-output">[INFO ] [2024-05-09 00:32:51,172] - Login - Step 01: Navigate to Login page
 <br></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
@@ -273,26 +332,30 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.nopcommerce.user.Manage_Data</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.nopcommerce.user.Multiple_Environment_Owner</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">initBeforeSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass(chrome)</span>
-                <span class="method-start">47 ms</span>
+                <span class="method-start">50 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">User01_Register</span>
-                <span class="method-start">4288 ms</span>
+                <span class="method-start">4541 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">User_02_Login</span>
-                <span class="method-start">11853 ms</span>
+                <span class="method-start">41276 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">14092 ms</span>
+                <span class="method-start">71517 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

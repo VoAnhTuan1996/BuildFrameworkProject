@@ -1,11 +1,16 @@
-[INFO ] [2024-04-30 15:59:52,071] - Register - Step 01: Navigate to 'Register' page
-[INFO ] [2024-04-30 15:59:53,399] - Register - Step 02: Enter to all fields information
-[INFO ] [2024-04-30 15:59:57,838] - Register - Step 03: Click to Register button
-[INFO ] [2024-04-30 15:59:58,601] - Register - Step 04: Verify success message displayed
-[INFO ] [2024-04-30 15:59:58,709] - Register - Step 05: Click to logout
-[INFO ] [2024-04-30 15:59:59,523] - Login - Step 01: Navigate to Login page
-[INFO ] [2024-04-30 15:59:59,953] - Login - Step 02: Enter to email and password textbox
-[INFO ] [2024-04-30 16:00:00,324] - Login - Step 03: Click to login button
-[INFO ] [2024-04-30 16:00:01,097] - Login - Step 04: Verify my account link is displayed
-[INFO ] [2024-04-30 16:00:01,756] - OS name = windows 10
-[INFO ] [2024-04-30 16:00:01,756] - Driver instance name = chromedriver: chrome on windows (313528ff97885b7253041f4d1d20750a)
+[INFO ] [2024-05-09 00:32:14,537] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-05-09 00:32:15,866] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-05-09 00:32:20,275] - Register - Step 03: Click to Register button
+[INFO ] [2024-05-09 00:32:20,791] - Register - Step 04: Verify success message displayed
+[INFO ] [2024-05-09 00:32:51,172] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-05-09 00:33:21,407] - OS name = windows 10
+[INFO ] [2024-05-09 00:33:21,407] - Driver instance name = chromedriver: chrome on windows (bbc632904d9a3ecfb6533183fe11c613)
+[INFO ] [2024-05-09 00:33:21,410] - no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.225)
+Build info: version: '4.18.0', revision: 'b6bf9de7cc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bbc632904d9a3ecfb6533183fe11c613, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61754}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61754/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bbc632904d9a3ecfb6533183fe11c613

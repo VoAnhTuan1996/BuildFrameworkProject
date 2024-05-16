@@ -38,12 +38,14 @@ public class Manage_Data extends BaseTest {
 		homePage = PageGeneratorManager.getUserHomePage(driver);
 		//dataFaker = DataHelper.getDataHelper();
 		userData = UserDataMapper.getUserData();
-		
-		System.out.println(userData.getSubjects().get(0).getName());
-		System.out.println(userData.getSubjects().get(0).getPoint());
-		
-		System.out.println(userData.getSubjects().get(1).getName());
-		System.out.println(userData.getSubjects().get(1).getPoint());
+		System.out.print("userData:"+userData);
+		/*
+		 * System.out.println(userData.getSubjects().get(0).getName());
+		 * System.out.println(userData.getSubjects().get(0).getPoint());
+		 * 
+		 * System.out.println(userData.getSubjects().get(1).getName());
+		 * System.out.println(userData.getSubjects().get(1).getPoint());
+		 */
 		
 		firstName = userData.getFirstName();
 		lastName = userData.getLastName();
@@ -64,8 +66,8 @@ public class Manage_Data extends BaseTest {
 		log.info("Register - Step 02: Enter to all fields information");
 		registerPage.inputToTextboxByID(driver,"FirstName", firstName);
 		
-		registerPage.inputToTextboxByID(driver, "FirstName",userData.getLoginUsername());
-		registerPage.inputToTextboxByID(driver, "FirstName",userData.getLoginPassword());
+		//registerPage.inputToTextboxByID(driver, "FirstName",userData.getLoginUsername());
+		//registerPage.inputToTextboxByID(driver, "FirstName",userData.getLoginPassword());
 		
 		registerPage.inputToTextboxByID(driver,"LastName", lastName);
 		registerPage.selectToDropdownByName(driver, "DateOfBirthDay", date);
