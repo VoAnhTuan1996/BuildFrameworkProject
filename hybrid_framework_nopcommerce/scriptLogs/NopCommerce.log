@@ -524,3 +524,20 @@ Driver info: org.openqa.selenium.chrome.ChromeDriver
 Command: [bbc632904d9a3ecfb6533183fe11c613, deleteAllCookies {}]
 Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61754}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61754/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
 Session ID: bbc632904d9a3ecfb6533183fe11c613
+[INFO ] [2024-05-27 22:04:34,404] - OS name = windows 10
+[INFO ] [2024-05-27 22:04:34,407] - Cannot invoke "Object.toString()" because "this.driver" is null
+[INFO ] [2024-05-27 22:05:17,679] - Register - Step 01: Navigate to 'Register' page
+[INFO ] [2024-05-27 22:05:28,557] - Register - Step 02: Enter to all fields information
+[INFO ] [2024-05-27 22:05:33,291] - Register - Step 03: Click to Register button
+[INFO ] [2024-05-27 22:06:03,460] - Login - Step 01: Navigate to Login page
+[INFO ] [2024-05-27 22:06:33,503] - OS name = windows 10
+[INFO ] [2024-05-27 22:06:33,505] - Driver instance name = chromedriver: chrome on windows (1062a4e7ecf0f7cf3e040ffa4e4cbe90)
+[INFO ] [2024-05-27 22:06:33,510] - no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.225)
+Build info: version: '4.18.0', revision: 'b6bf9de7cc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1062a4e7ecf0f7cf3e040ffa4e4cbe90, deleteAllCookies {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56751}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56751/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1062a4e7ecf0f7cf3e040ffa4e4cbe90

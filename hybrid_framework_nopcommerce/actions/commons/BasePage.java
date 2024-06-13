@@ -215,10 +215,27 @@ public class BasePage {
 		return select.isMultiple();
 	}
 	
+	public void selectItemInDropdown(WebDriver driver, String parentLocator, String childLocator, String expectedTextItem) {
+		getWebElement(driver, parentLocator).click();
+		//System.out.println("click parent");
+		sleepInSecond(1);
+		
+		List<WebElement> speedDropdownItems = new WebDriverWait(driver,Duration.ofSeconds(longTimeout)).until(ExpectedConditions.presenceOfAllElementsLocatedBy(getByLocator(childLocator)));
+		for(WebElement tempItem : speedDropdownItems) {
+			if(tempItem.getText().trim().equals(expectedTextItem)) {
+				JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+				jsExecutor.executeScript("arguments[0].scrollIntoView(true);", tempItem);
+				sleepInSecond(1);
+				tempItem.click();
+				//System.out.println("click child");
+				break;
+			}
+		}
+	}
+	
 	public void selectItemInCustomDropdown(WebDriver driver, String parentXpath, String childXpath, String expectedTextItem) {
 		driver.findElement(By.xpath(parentXpath)).click();
 		sleepInSecond(1);
-		
 		WebDriverWait explicitWait = new WebDriverWait(driver,Duration.ofSeconds(30));
 		List<WebElement> allItems = explicitWait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath(childXpath)));
 		for(WebElement item:allItems) {
@@ -365,6 +382,10 @@ public class BasePage {
 		return getWebElement(driver,locator).isSelected();
 	}
 	
+	public boolean isElementSelected(WebDriver driver, String locator, String ...dynamicValues) {
+		return getWebElement(driver,getDynamicXpath(locator, dynamicValues)).isSelected();
+	}
+	
 	public void switchToFrameIframe(WebDriver driver, String locator) {
 		driver.switchTo().frame(getWebElement(driver,locator));
 	}
@@ -405,6 +426,11 @@ public class BasePage {
 	public void clickToElementByJS(WebDriver driver, String locator) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", getWebElement(driver,locator));
+	}
+	
+	public void clickToElementByJS(WebDriver driver, String locator, String ...dynamicValues) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", getWebElement(driver,getDynamicXpath(locator,dynamicValues)));
 	}
 	
 	public void scrollToElement(WebDriver driver, String locator) {

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on CHROME"
+           tests="10"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.121">
+  <properties />
+  
+  
+            <testcase name="Employee_08_Salary" time="0.004" classname="com.orangehrm.pim.PIM_Employee" />
+                <testcase name="Employee_05_Dependents" time="0.008" classname="com.orangehrm.pim.PIM_Employee" />
+                <testcase name="Employee_01_Add_New" time="0.073" classname="com.orangehrm.pim.PIM_Employee" />
+                <testcase name="Employee_04_Emergency_Contacts" time="0.008" classname="com.orangehrm.pim.PIM_Employee" />
+                <testcase name="Employee_10_Qualifications" time="0.004" classname="com.orangehrm.pim.PIM_Employee" />
+                <testcase name="Employee_02_Personal_Details" time="0.006" classname="com.orangehrm.pim.PIM_Employee" />
+                <testcase name="Employee_07_Job" time="0.005" classname="com.orangehrm.pim.PIM_Employee" />
+                <testcase name="Employee_03_Contact_Details" time="0.004" classname="com.orangehrm.pim.PIM_Employee" />
+                <testcase name="Employee_06_Immigration" time="0.006" classname="com.orangehrm.pim.PIM_Employee" />
+                <testcase name="Employee_09_Report" time="0.003" classname="com.orangehrm.pim.PIM_Employee" />
+      
+</testsuite>
