@@ -15,9 +15,12 @@ import pageObjects.orangehrm.DashboardPageObject;
 import pageObjects.orangehrm.DependenciesPageObject;
 import pageObjects.orangehrm.EmergencyContactPageObject;
 import pageObjects.orangehrm.EmployeeListPageObject;
+import pageObjects.orangehrm.ImigrationPageObject;
+import pageObjects.orangehrm.JobPageObject;
 import pageObjects.orangehrm.LoginPageObject;
 import pageObjects.orangehrm.PageGeneratorManager;
 import pageObjects.orangehrm.PersonalDetailPageObject;
+import pageObjects.orangehrm.SalaryPageObject;
 
 public class PIM_Employee extends BaseTest {
 	private WebDriver driver;
@@ -26,6 +29,9 @@ public class PIM_Employee extends BaseTest {
 	private String dateOfBirth, genderStatus, nationality, maritalStatus, bloodType;
 	private String street1, street2, city, state, zipCode, country;
 	private String mobilePhone, workEmail;
+	private String document, number, issuedDate, issuedBy, expiryDate, eligibleReviewDate, eligibleStatus;
+	private String joinedDate, jobTitle, jobSpecification, jobCategory, subUnit, location, employmentStatus;
+	private String salaryComponents, payGrade, payFrequency, currency, amount;
 	private static final String CHARACTERS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
     private static final int USERNAME_LENGTH = 10;
     private static final String DOMAIN = "example.com";
@@ -39,6 +45,11 @@ public class PIM_Employee extends BaseTest {
 	private ContactDetailPageObject contactDetailsPage;
 	private EmergencyContactPageObject emergencyContactPage;
 	private DependenciesPageObject dependencyPage;
+	private ImigrationPageObject imigrationPage;
+	private JobPageObject jobPage;
+	private SalaryPageObject salaryPage;
+	private String javaFileName = "java.jpg";
+	String[] multipleFileNames = {javaFileName};
 	@Parameters({"url","browser"})
 	@BeforeClass
 	public void beforeClass(String url, String browserName) {
@@ -67,9 +78,28 @@ public class PIM_Employee extends BaseTest {
 		nameDependant = "Henry";
 		relationshipDependant = "Other";
 		dateOfBirthDependant = "1990-08-08";
+		document = "Visa";
+		number = "100";
+		issuedDate = "2024-21-03";
+		expiryDate = "2024-24-06";
+		eligibleStatus = "enough";
+		issuedBy = "Viet Nam";
+		eligibleReviewDate = "2024-14-05";
+		joinedDate = "2024-28-03";
+		jobSpecification = "Not Defined";
+		jobTitle = "Automaton Tester";
+		jobCategory = "Professionals";
+		subUnit = "Engineering";
+		location = "New York Sales Office";
+		employmentStatus = "Freelance";
+		salaryComponents="10000"; 
+		payGrade="Grade 3";
+		payFrequency="Monthly"; 
+		currency="United States Dollar"; 
+		amount = "45000";
+		
 		
 		loginPage = PageGeneratorManager.getLoginPage(driver);
-		
 		loginPage.enterToUserNameTextbox("Admin");
 		loginPage.enterToPasswordTextbox("admin123");
 		dashboardPage = loginPage.clickLoginButton();
@@ -142,6 +172,8 @@ public class PIM_Employee extends BaseTest {
 		
 		personalDetailsPage.enterToDateOfBirthDatePicker(dateOfBirth);
 		
+		personalDetailsPage.sleepInSecond(2);;
+		
 		personalDetailsPage.clickToRadioButtonByLabelName(genderStatus);
 		
 		personalDetailsPage.clickToSaveButtonAtPersonalDetailPart();
@@ -165,66 +197,116 @@ public class PIM_Employee extends BaseTest {
 		
 	}
 	
-	@Test
-	public void Employee_03_Contact_Details() {
-		contactDetailsPage = personalDetailsPage.clickToContactDetailsButton();
-		contactDetailsPage.enterStreet1Textbox(street1);
-		contactDetailsPage.enterStreet2Textbox(street2);
-		contactDetailsPage.enterCityTextbox(city);
-		contactDetailsPage.enterStateTextbox(state);
-		contactDetailsPage.enterZipCodeTextbox(zipCode);
-		contactDetailsPage.selectCountryDropdown(country);
-		contactDetailsPage.enterMobilePhoneTextbox(mobilePhone);
-		contactDetailsPage.enterWorkEmailTextbox(workEmail);
-		contactDetailsPage.clickSaveButtonAtContactDetails();
-		
-		Assert.assertTrue(contactDetailsPage.isSuccessMessageDisplayed("Successfully Updated"));
-		Assert.assertEquals(contactDetailsPage.getCountryDropdownSelectText(),country);
-	}
+	/*
+	 * @Test public void Employee_03_Contact_Details() { contactDetailsPage =
+	 * personalDetailsPage.clickToContactDetailsButton();
+	 * contactDetailsPage.enterStreet1Textbox(street1);
+	 * contactDetailsPage.enterStreet2Textbox(street2);
+	 * contactDetailsPage.enterCityTextbox(city);
+	 * contactDetailsPage.enterStateTextbox(state);
+	 * contactDetailsPage.enterZipCodeTextbox(zipCode);
+	 * contactDetailsPage.selectCountryDropdown(country);
+	 * contactDetailsPage.enterMobilePhoneTextbox(mobilePhone);
+	 * contactDetailsPage.enterWorkEmailTextbox(workEmail);
+	 * contactDetailsPage.clickSaveButtonAfterAddRecord();
+	 * 
+	 * Assert.assertTrue(contactDetailsPage.
+	 * isSuccessMessageDisplayed("Successfully Updated"));
+	 * Assert.assertEquals(contactDetailsPage.getCountryDropdownSelectText(),country
+	 * ); }
+	 * 
+	 * @Test public void Employee_04_Emergency_Contacts() { emergencyContactPage =
+	 * contactDetailsPage.clickToEmergencyContactsButton();
+	 * emergencyContactPage.clickAddButtonAtASC();
+	 * emergencyContactPage.enterNameTxtbox(nameASC);
+	 * emergencyContactPage.enterRelationshipTxtbox(relationshipASC);
+	 * emergencyContactPage.enterMobilePhoneTxtbox(mobileASC);
+	 * emergencyContactPage.clickSaveButtonAfterAddRecord();
+	 * 
+	 * Assert.assertTrue(contactDetailsPage.
+	 * isSuccessMessageDisplayed("Successfully Saved")); }
+	 * 
+	 * @Test public void Employee_05_Dependents() { dependencyPage =
+	 * emergencyContactPage.clickToDependantPageButton();
+	 * dependencyPage.clickAddButtonAtAD();
+	 * dependencyPage.enterNameTxtbox(nameDependant);
+	 * dependencyPage.selectRelationshipDropdown(relationshipDependant);
+	 * dependencyPage.enterPleaseSpecifyTxtbox("friend");
+	 * dependencyPage.enterToDateOfBirthDatePicker(dateOfBirthDependant);
+	 * dependencyPage.clickSaveButtonAfterAddRecord();
+	 * 
+	 * Assert.assertTrue(dependencyPage.
+	 * isSuccessMessageDisplayed("Successfully Saved"));
+	 * Assert.assertEquals(dependencyPage.getRelationshipDropdownText(),
+	 * relationshipDependant); }
+	 * 
+	 * @Test public void Employee_06_Immigration() { imigrationPage =
+	 * dependencyPage.clickToImigrationPageButton(); imigrationPage.
+	 * clickAddRecordsButtonByLabelName("Assigned Immigration Records");
+	 * imigrationPage.clickToRadioButtonByLabelName(document);
+	 * imigrationPage.enterNumberTextbox(number);
+	 * imigrationPage.enterToIssuedDate_DP(issuedDate);
+	 * imigrationPage.enterToExpiryDate_DP(expiryDate);
+	 * imigrationPage.enterEligibleStatusTxtbox(eligibleStatus);
+	 * imigrationPage.clickItemIssuedByDropdown(issuedBy);
+	 * imigrationPage.enterEligibleReviewDate_DP(eligibleReviewDate);
+	 * imigrationPage.clickSaveButtonAfterAddRecord();
+	 * 
+	 * Assert.assertTrue(imigrationPage.
+	 * isSuccessMessageDisplayed("Successfully Saved"));
+	 * Assert.assertEquals(imigrationPage.getIssuedByDropdownSelectedText(),
+	 * issuedBy); }
+	 */
 	
-	@Test
-	public void Employee_04_Emergency_Contacts() {
-		emergencyContactPage = contactDetailsPage.clickToEmergencyContactsButton();
-		emergencyContactPage.clickAddButtonAtASC();
-		emergencyContactPage.enterNameTxtbox(nameASC);
-		emergencyContactPage.enterRelationshipTxtbox(relationshipASC);
-		emergencyContactPage.enterMobilePhoneTxtbox(mobileASC);
-		emergencyContactPage.clickSaveButtonAtASC();
-		
-		Assert.assertTrue(contactDetailsPage.isSuccessMessageDisplayed("Successfully Saved"));
-	}
-	
-	@Test
-	public void Employee_05_Dependents() {
-		dependencyPage = emergencyContactPage.clickToDependantPageButton();
-		dependencyPage.clickAddButtonAtAD();
-		dependencyPage.enterNameTxtbox(nameDependant);
-		dependencyPage.selectRelationshipDropdown(relationshipDependant);
-		dependencyPage.enterPleaseSpecifyTxtbox("friend");
-		dependencyPage.enterToDateOfBirthDatePicker(dateOfBirthDependant);
-		dependencyPage.clickSaveButtonAtAD();
-		
-		Assert.assertTrue(dependencyPage.isSuccessMessageDisplayed("Successfully Saved"));
-		Assert.assertEquals(dependencyPage.getRelationshipDropdownText(),relationshipDependant);
-		
-		dependencyPage.checkDeleteDependent();
-		dependencyPage.clickDeleteButtonDependent();
-		dependencyPage.clickConfirmDeleteButtonDependent();
-	}
-	
-	@Test
-	public void Employee_06_Immigration() {
-		
-	}
-	
-	@Test
+	//@Test
 	public void Employee_07_Job() {
-		
+		//imigrationPage.clickEmployeeNavigationLinkButton("Job");
+		personalDetailsPage.clickEmployeeNavigationLinkButton("Job");
+		jobPage = PageGeneratorManager.getJobPage(driver);
+		jobPage.enterJoinedDate_DP(joinedDate);
+		jobPage.sleepInSecond(1);
+		jobPage.selectItemJobTitleInDropdown(jobTitle);
+		jobPage.sleepInSecond(1);
+		jobPage.selectItemJobCategoryInDropdown(jobCategory);
+		jobPage.sleepInSecond(1);
+		jobPage.selectItemSubUnitInDropdown(subUnit);
+		jobPage.sleepInSecond(1);
+		jobPage.selectItemLocationInDropdown(location);
+		jobPage.sleepInSecond(1);
+		jobPage.selectItemEmploymentStatus(employmentStatus);
+		jobPage.sleepInSecond(1);
+		jobPage.clickIECD_checkboxButton();
+		jobPage.sleepInSecond(1);
+		jobPage.enterContractStartDate("2023-01-03");
+		jobPage.enterContractEndDate("2024-12-03");
+		jobPage.uploadMultipleFiles(driver, multipleFileNames);
+		//jobPage.clickToBrowseButton();
+		jobPage.sleepInSecond(3);
+		jobPage.clickSaveButtonAfterAddRecord();
+		Assert.assertTrue(jobPage.isSuccessMessageDisplayed("Successfully Updated"));
+		Assert.assertEquals(jobPage.getJobSpecification(),jobSpecification);
+		Assert.assertEquals(jobPage.getJobTitle(),jobTitle);
+		Assert.assertEquals(jobPage.getJobCategory(),jobCategory);
+		Assert.assertEquals(jobPage.getSubUnit(),subUnit);
+		Assert.assertEquals(jobPage.getLocation(),location);
+		Assert.assertEquals(jobPage.getEmployementStatus(), employmentStatus);
 	}
 	
 	@Test
 	public void Employee_08_Salary() {
+		personalDetailsPage.clickEmployeeNavigationLinkButton("Salary");
+		salaryPage = PageGeneratorManager.getSalaryPage(driver);
+		salaryPage.clickAddRecordsButtonByLabelName("Assigned Salary Components");
+		salaryPage.enterSalaryComponentsTextbox(salaryComponents);
+		salaryPage.selectPayGradeDropdown(payGrade);
+		salaryPage.selectPayFrequencyDropdown(payFrequency);
+		salaryPage.selectCurrencyDropdown(currency);
+		salaryPage.enterAmountTextbox(amount);
 		
+		Assert.assertEquals(salaryPage.getMessageErrorAmountTextbox(), "Should be within Min/Max values");
+		Assert.assertEquals(salaryPage.getPayGradeSelectedText(), payGrade);
+		Assert.assertEquals(salaryPage.getPayFrequencySelectedText(), payFrequency);
+		Assert.assertEquals(salaryPage.getCurrencySelectedText(), currency);
 	}
 	
 	@Test

@@ -62,4 +62,11 @@ public class DependenciesPageObject extends BaseActions {
 		clickToElement(driver, DependenciesPageUI.CONFIRM_BUTTON);
 		waitForSpinnerIconInvisible();
 	}
+
+	public ImigrationPageObject clickToImigrationPageButton() {
+		waitForElementClickable(driver, DependenciesPageUI.IMMIGRATION_LINK_BUTTON);
+		clickToElement(driver, DependenciesPageUI.IMMIGRATION_LINK_BUTTON);
+		waitForSpinnerIconInvisible();
+		return PageGeneratorManager.getImigrationPage(driver);
+	}
 }

@@ -8,4 +8,9 @@ public class BaseActionsUI {
 	
 	public static final String DYNAMIC_RADIO_BUTTON_BY_LABEL_NAME = "xpath=//label[string()='%s']/input";
 	public static final String DYNAMIC_CHECKBOX_BY_LABEL_NAME = "xpath=//label[string()='%s']/input";
+	
+	public static final String DYNAMIC_ADD_RECORDS_BUTTON_BY_LABEL_NAME = "xpath=//h6[text()='%s']/following-sibling::button";
+	public static final String DYNAMIC_SAVE_BUTTON = "xpath=//div[@class='orangehrm-horizontal-padding orangehrm-vertical-padding']//button[@type='submit']";
+	
+	public static final String DYNAMIC_EMPLOYEE_NAVIGATION_LINK_BUTTON = "xpath=//a[contains(text(),'%s')]";
 }

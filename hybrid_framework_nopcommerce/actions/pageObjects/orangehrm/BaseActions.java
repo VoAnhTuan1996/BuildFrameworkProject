@@ -43,4 +43,17 @@ public class BaseActions extends BasePage {
 	public boolean isCheckboxSelectedByLabelName(String checkboxLabelName) {
 		return isElementSelected(driver, BaseActionsUI.DYNAMIC_CHECKBOX_BY_LABEL_NAME,checkboxLabelName);
 	}
+	
+	
+	public void clickAddRecordsButtonByLabelName(String labelName) {
+		clickToElementByJS(driver, BaseActionsUI.DYNAMIC_ADD_RECORDS_BUTTON_BY_LABEL_NAME,labelName);
+	}
+	
+	public void clickSaveButtonAfterAddRecord() {
+		clickToElement(driver, BaseActionsUI.DYNAMIC_SAVE_BUTTON);
+	}
+		
+	public void clickEmployeeNavigationLinkButton(String title) {
+		clickToElement(driver, BaseActionsUI.DYNAMIC_EMPLOYEE_NAVIGATION_LINK_BUTTON,title);
+	}
 }

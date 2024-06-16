@@ -12,4 +12,6 @@ public class DependenciesPageUI {
 	public static final String CHECKBOX_DELETE_DEPENDANT = "xpath=//div[@class='oxd-table-card']//label/input/following-sibling::span/i";
 	public static final String DELETE_BUTTON = "xpath=//i[@class='oxd-icon bi-trash']/parent::button";
 	public static final String CONFIRM_BUTTON = "xpath=//div[@class='orangehrm-modal-footer']//i/parent::button";
+	
+	public static final String IMMIGRATION_LINK_BUTTON = "xpath=//a[contains(text(),'Immigration')]";
 }

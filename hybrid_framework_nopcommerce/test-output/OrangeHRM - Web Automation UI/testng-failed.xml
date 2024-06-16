@@ -13,8 +13,9 @@
         <methods>
           <include name="initBeforeSuite"/>
           <include name="afterClass"/>
+          <include name="Employee_02_Personal_Details"/>
           <include name="beforeClass"/>
-          <include name="Employee_05_Dependents"/>
+          <include name="Employee_08_Salary"/>
         </methods>
       </class> <!-- com.orangehrm.pim.PIM_Employee -->
     </classes>
