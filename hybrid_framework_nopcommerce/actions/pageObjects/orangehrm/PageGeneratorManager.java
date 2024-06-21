@@ -51,5 +51,7 @@ public class PageGeneratorManager {
 		return new SalaryPageObject(driver);
 	}
 
-
+	public static QualificationsPageObject getQualificationsPage(WebDriver driver) {
+		return new QualificationsPageObject(driver);
+	}
 }

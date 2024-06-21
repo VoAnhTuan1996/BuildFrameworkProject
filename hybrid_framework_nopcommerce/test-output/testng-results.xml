@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-16T17:01:39 ICT" name="OrangeHRM - Web Automation UI" finished-at="2024-06-16T17:02:50 ICT" duration-ms="71256">
+  <suite started-at="2024-06-21T06:42:50 ICT" name="OrangeHRM - Web Automation UI" finished-at="2024-06-21T06:44:11 ICT" duration-ms="81739">
     <groups>
     </groups>
-    <test started-at="2024-06-16T17:01:39 ICT" name="Run on CHROME" finished-at="2024-06-16T17:02:50 ICT" duration-ms="71256">
+    <test started-at="2024-06-21T06:42:50 ICT" name="Run on CHROME" finished-at="2024-06-21T06:44:11 ICT" duration-ms="81739">
       <class name="com.orangehrm.pim.PIM_Employee">
-        <test-method is-config="true" signature="initBeforeSuite()[pri:0, instance:com.orangehrm.pim.PIM_Employee@5dcd8c7a]" started-at="2024-06-16T17:01:39 ICT" name="initBeforeSuite" finished-at="2024-06-16T17:01:39 ICT" duration-ms="23" status="PASS">
+        <test-method is-config="true" signature="initBeforeSuite()[pri:0, instance:com.orangehrm.pim.PIM_Employee@5dcd8c7a]" started-at="2024-06-21T06:42:50 ICT" name="initBeforeSuite" finished-at="2024-06-21T06:42:50 ICT" duration-ms="36" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initBeforeSuite -->
-        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.pim.PIM_Employee@5dcd8c7a]" started-at="2024-06-16T17:01:39 ICT" name="beforeClass" finished-at="2024-06-16T17:01:52 ICT" duration-ms="13443" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String)[pri:0, instance:com.orangehrm.pim.PIM_Employee@5dcd8c7a]" started-at="2024-06-21T06:42:50 ICT" name="beforeClass" finished-at="2024-06-21T06:43:36 ICT" duration-ms="46240" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,27 +27,161 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="Employee_01_Add_New()[pri:0, instance:com.orangehrm.pim.PIM_Employee@5dcd8c7a]" started-at="2024-06-16T17:01:52 ICT" name="Employee_01_Add_New" finished-at="2024-06-16T17:02:03 ICT" duration-ms="10999" status="PASS">
+        <test-method signature="Employee_01_Add_New()[pri:0, instance:com.orangehrm.pim.PIM_Employee@5dcd8c7a]" started-at="2024-06-21T06:43:36 ICT" name="Employee_01_Add_New" finished-at="2024-06-21T06:43:48 ICT" duration-ms="12486" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Employee_01_Add_New -->
-        <test-method signature="Employee_02_Personal_Details()[pri:0, instance:com.orangehrm.pim.PIM_Employee@5dcd8c7a]" started-at="2024-06-16T17:02:03 ICT" name="Employee_02_Personal_Details" finished-at="2024-06-16T17:02:41 ICT" duration-ms="37296" status="PASS">
+        <test-method signature="Employee_02_Personal_Details()[pri:0, instance:com.orangehrm.pim.PIM_Employee@5dcd8c7a]" started-at="2024-06-21T06:43:49 ICT" name="Employee_02_Personal_Details" finished-at="2024-06-21T06:43:56 ICT" duration-ms="7306" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <i data-v-bddebfba="" data-v-67d2aedf="" class="oxd-icon bi-caret-down-fill oxd-select-text--arrow"></i> is not clickable at point (1008, 219). Other element would receive the click: <hr data-v-9f847659="" data-v-8c6e0396="" class="oxd-divider" role="separator" aria-orientation="horizontal">
+  (Session info: chrome=120.0.6099.225)
+Build info: version: '4.18.0', revision: 'b6bf9de7cc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bf2eafd26e26578eaf79af17debb5b8d, clickElement {id=87D22DA76A5D7ADEAE83575ACAC2E14F_element_473}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55534}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55534/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bf2eafd26e26578eaf79af17debb5b8d)] -> xpath: //label[text()='Marital Status']/parent::div/following-sibling::div//i]
+Session ID: bf2eafd26e26578eaf79af17debb5b8d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <i data-v-bddebfba="" data-v-67d2aedf="" class="oxd-icon bi-caret-down-fill oxd-select-text--arrow"></i> is not clickable at point (1008, 219). Other element would receive the click: <hr data-v-9f847659="" data-v-8c6e0396="" class="oxd-divider" role="separator" aria-orientation="horizontal">
+  (Session info: chrome=120.0.6099.225)
+Build info: version: '4.18.0', revision: 'b6bf9de7cc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bf2eafd26e26578eaf79af17debb5b8d, clickElement {id=87D22DA76A5D7ADEAE83575ACAC2E14F_element_473}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55534}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55534/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bf2eafd26e26578eaf79af17debb5b8d)] -> xpath: //label[text()='Marital Status']/parent::div/following-sibling::div//i]
+Session ID: bf2eafd26e26578eaf79af17debb5b8d
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at commons.BasePage.selectItemInDropdown(BasePage.java:219)
+at pageObjects.orangehrm.PersonalDetailPageObject.selectToMaritalStatusDropdown(PersonalDetailPageObject.java:74)
+at com.orangehrm.pim.PIM_Employee.Employee_02_Personal_Details(PIM_Employee.java:204)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Employee_02_Personal_Details -->
-        <test-method signature="Employee_08_Salary()[pri:0, instance:com.orangehrm.pim.PIM_Employee@5dcd8c7a]" started-at="2024-06-16T17:02:41 ICT" name="Employee_08_Salary" finished-at="2024-06-16T17:02:50 ICT" duration-ms="9033" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Employee_08_Salary -->
-        <test-method signature="Employee_09_Report()[pri:0, instance:com.orangehrm.pim.PIM_Employee@5dcd8c7a]" started-at="2024-06-16T17:02:50 ICT" name="Employee_09_Report" finished-at="2024-06-16T17:02:50 ICT" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Employee_09_Report -->
-        <test-method signature="Employee_10_Qualifications()[pri:0, instance:com.orangehrm.pim.PIM_Employee@5dcd8c7a]" started-at="2024-06-16T17:02:50 ICT" name="Employee_10_Qualifications" finished-at="2024-06-16T17:02:50 ICT" duration-ms="6" status="PASS">
+        <test-method signature="Employee_10_Qualifications()[pri:0, instance:com.orangehrm.pim.PIM_Employee@5dcd8c7a]" started-at="2024-06-21T06:43:56 ICT" name="Employee_10_Qualifications" finished-at="2024-06-21T06:44:11 ICT" duration-ms="15047" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=120.0.6099.225)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.18.0', revision: 'b6bf9de7cc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bf2eafd26e26578eaf79af17debb5b8d, clickElement {id=51BA2B55B1379E68BE4C33BA2A1FD944_element_650}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55534}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55534/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bf2eafd26e26578eaf79af17debb5b8d)] -> xpath: //label[text()='Language']/parent::div/following-sibling::div//i]
+Session ID: bf2eafd26e26578eaf79af17debb5b8d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=120.0.6099.225)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.18.0', revision: 'b6bf9de7cc'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bf2eafd26e26578eaf79af17debb5b8d, clickElement {id=51BA2B55B1379E68BE4C33BA2A1FD944_element_650}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55534}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55534/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bf2eafd26e26578eaf79af17debb5b8d)] -> xpath: //label[text()='Language']/parent::div/following-sibling::div//i]
+Session ID: bf2eafd26e26578eaf79af17debb5b8d
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at commons.BasePage.selectItemInDropdown(BasePage.java:219)
+at pageObjects.orangehrm.QualificationsPageObject.selectLanguageDropdown(QualificationsPageObject.java:96)
+at com.orangehrm.pim.PIM_Employee.Employee_10_Qualifications(PIM_Employee.java:403)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Employee_10_Qualifications -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.orangehrm.pim.PIM_Employee@5dcd8c7a]" started-at="2024-06-16T17:02:50 ICT" name="afterClass" finished-at="2024-06-16T17:02:50 ICT" duration-ms="302" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.orangehrm.pim.PIM_Employee@5dcd8c7a]" started-at="2024-06-21T06:44:11 ICT" name="afterClass" finished-at="2024-06-21T06:44:11 ICT" duration-ms="486" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

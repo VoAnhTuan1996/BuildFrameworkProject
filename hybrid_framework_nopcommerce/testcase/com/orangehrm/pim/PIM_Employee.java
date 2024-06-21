@@ -20,6 +20,8 @@ import pageObjects.orangehrm.JobPageObject;
 import pageObjects.orangehrm.LoginPageObject;
 import pageObjects.orangehrm.PageGeneratorManager;
 import pageObjects.orangehrm.PersonalDetailPageObject;
+import pageObjects.orangehrm.QualificationsPageObject;
+import pageObjects.orangehrm.ReportToPageObject;
 import pageObjects.orangehrm.SalaryPageObject;
 
 public class PIM_Employee extends BaseTest {
@@ -37,6 +39,12 @@ public class PIM_Employee extends BaseTest {
     private static final String DOMAIN = "example.com";
 	private String nameASC, relationshipASC, mobileASC;
 	private String nameDependant, relationshipDependant, dateOfBirthDependant;
+	private String nameSupervisor1, nameSupervisor2, reportingMethodsSupervisor;
+	private String companyName, jobTitleExp, fromDate, toDate, comment;
+	private String levelEdu, institute, major, year, score, startDate, endDate;
+	private String skillName, yearOfExp;
+	private String language, fluency, competency;
+	private String licenseType, licenseNumber, licenseIssuedDate, licenseExpiredDate;
 	private LoginPageObject loginPage;
 	private DashboardPageObject dashboardPage;
 	private EmployeeListPageObject employeeListPage;
@@ -48,6 +56,8 @@ public class PIM_Employee extends BaseTest {
 	private ImigrationPageObject imigrationPage;
 	private JobPageObject jobPage;
 	private SalaryPageObject salaryPage;
+	private ReportToPageObject reportToPage;
+	private QualificationsPageObject qualificationsPage;
 	private String javaFileName = "java.jpg";
 	String[] multipleFileNames = {javaFileName};
 	@Parameters({"url","browser"})
@@ -97,7 +107,30 @@ public class PIM_Employee extends BaseTest {
 		payFrequency="Monthly"; 
 		currency="United States Dollar"; 
 		amount = "45000";
-		
+		nameSupervisor1 = "a";
+		nameSupervisor2 = "b";
+		reportingMethodsSupervisor = "Direct";
+		companyName="Apple"; 
+		jobTitleExp="Technical Engineer";
+		fromDate="2020-5-1"; 
+		toDate="2024-9-10"; 
+		comment="abcxyz";
+		levelEdu="Master's Degree"; 
+		institute="MIT"; 
+		major="Computer Science";
+		year="2020";
+		score="9.6";
+		startDate="2016-09-09"; 
+		endDate="2020-04-15";
+		skillName="Java";
+		yearOfExp="4";
+		language="English";
+		fluency="";
+		competency="Good";
+		licenseType="Microsoft Certified Systems Engineer (MCSE)"; 
+		licenseNumber="1"; 
+		licenseIssuedDate="2023-08-05";
+		licenseExpiredDate="2025-08-05";
 		
 		loginPage = PageGeneratorManager.getLoginPage(driver);
 		loginPage.enterToUserNameTextbox("Admin");
@@ -197,71 +230,69 @@ public class PIM_Employee extends BaseTest {
 		
 	}
 	
-	/*
-	 * @Test public void Employee_03_Contact_Details() { contactDetailsPage =
-	 * personalDetailsPage.clickToContactDetailsButton();
-	 * contactDetailsPage.enterStreet1Textbox(street1);
-	 * contactDetailsPage.enterStreet2Textbox(street2);
-	 * contactDetailsPage.enterCityTextbox(city);
-	 * contactDetailsPage.enterStateTextbox(state);
-	 * contactDetailsPage.enterZipCodeTextbox(zipCode);
-	 * contactDetailsPage.selectCountryDropdown(country);
-	 * contactDetailsPage.enterMobilePhoneTextbox(mobilePhone);
-	 * contactDetailsPage.enterWorkEmailTextbox(workEmail);
-	 * contactDetailsPage.clickSaveButtonAfterAddRecord();
-	 * 
-	 * Assert.assertTrue(contactDetailsPage.
-	 * isSuccessMessageDisplayed("Successfully Updated"));
-	 * Assert.assertEquals(contactDetailsPage.getCountryDropdownSelectText(),country
-	 * ); }
-	 * 
-	 * @Test public void Employee_04_Emergency_Contacts() { emergencyContactPage =
-	 * contactDetailsPage.clickToEmergencyContactsButton();
-	 * emergencyContactPage.clickAddButtonAtASC();
-	 * emergencyContactPage.enterNameTxtbox(nameASC);
-	 * emergencyContactPage.enterRelationshipTxtbox(relationshipASC);
-	 * emergencyContactPage.enterMobilePhoneTxtbox(mobileASC);
-	 * emergencyContactPage.clickSaveButtonAfterAddRecord();
-	 * 
-	 * Assert.assertTrue(contactDetailsPage.
-	 * isSuccessMessageDisplayed("Successfully Saved")); }
-	 * 
-	 * @Test public void Employee_05_Dependents() { dependencyPage =
-	 * emergencyContactPage.clickToDependantPageButton();
-	 * dependencyPage.clickAddButtonAtAD();
-	 * dependencyPage.enterNameTxtbox(nameDependant);
-	 * dependencyPage.selectRelationshipDropdown(relationshipDependant);
-	 * dependencyPage.enterPleaseSpecifyTxtbox("friend");
-	 * dependencyPage.enterToDateOfBirthDatePicker(dateOfBirthDependant);
-	 * dependencyPage.clickSaveButtonAfterAddRecord();
-	 * 
-	 * Assert.assertTrue(dependencyPage.
-	 * isSuccessMessageDisplayed("Successfully Saved"));
-	 * Assert.assertEquals(dependencyPage.getRelationshipDropdownText(),
-	 * relationshipDependant); }
-	 * 
-	 * @Test public void Employee_06_Immigration() { imigrationPage =
-	 * dependencyPage.clickToImigrationPageButton(); imigrationPage.
-	 * clickAddRecordsButtonByLabelName("Assigned Immigration Records");
-	 * imigrationPage.clickToRadioButtonByLabelName(document);
-	 * imigrationPage.enterNumberTextbox(number);
-	 * imigrationPage.enterToIssuedDate_DP(issuedDate);
-	 * imigrationPage.enterToExpiryDate_DP(expiryDate);
-	 * imigrationPage.enterEligibleStatusTxtbox(eligibleStatus);
-	 * imigrationPage.clickItemIssuedByDropdown(issuedBy);
-	 * imigrationPage.enterEligibleReviewDate_DP(eligibleReviewDate);
-	 * imigrationPage.clickSaveButtonAfterAddRecord();
-	 * 
-	 * Assert.assertTrue(imigrationPage.
-	 * isSuccessMessageDisplayed("Successfully Saved"));
-	 * Assert.assertEquals(imigrationPage.getIssuedByDropdownSelectedText(),
-	 * issuedBy); }
-	 */
 	
-	//@Test
+	@Test 
+	public void Employee_03_Contact_Details() { 
+		contactDetailsPage = personalDetailsPage.clickToContactDetailsButton();
+		contactDetailsPage.enterStreet1Textbox(street1);
+		contactDetailsPage.enterStreet2Textbox(street2);
+		contactDetailsPage.enterCityTextbox(city);
+		contactDetailsPage.enterStateTextbox(state);
+		contactDetailsPage.enterZipCodeTextbox(zipCode);
+		contactDetailsPage.selectCountryDropdown(country);
+		contactDetailsPage.enterMobilePhoneTextbox(mobilePhone);
+		contactDetailsPage.enterWorkEmailTextbox(workEmail);
+		contactDetailsPage.clickSaveButtonAfterAddRecord();
+	  
+		Assert.assertTrue(contactDetailsPage.isSuccessMessageDisplayed("Successfully Updated"));
+		Assert.assertEquals(contactDetailsPage.getCountryDropdownSelectText(),country); 
+	}
+	  
+	@Test 
+	public void Employee_04_Emergency_Contacts() {
+		emergencyContactPage = contactDetailsPage.clickToEmergencyContactsButton();
+		emergencyContactPage.clickAddButtonAtASC();
+		emergencyContactPage.enterNameTxtbox(nameASC);
+		emergencyContactPage.enterRelationshipTxtbox(relationshipASC);
+		emergencyContactPage.enterMobilePhoneTxtbox(mobileASC);
+		emergencyContactPage.clickSaveButtonAfterAddRecord();
+	  
+		Assert.assertTrue(contactDetailsPage.isSuccessMessageDisplayed("Successfully Saved")); }
+	  
+	@Test
+	public void Employee_05_Dependents() {
+		dependencyPage = emergencyContactPage.clickToDependantPageButton();
+		dependencyPage.clickAddButtonAtAD();
+		dependencyPage.enterNameTxtbox(nameDependant);
+		dependencyPage.selectRelationshipDropdown(relationshipDependant);
+		dependencyPage.enterPleaseSpecifyTxtbox("friend");
+		dependencyPage.enterToDateOfBirthDatePicker(dateOfBirthDependant);
+		dependencyPage.clickSaveButtonAfterAddRecord();
+	  
+		Assert.assertTrue(dependencyPage.isSuccessMessageDisplayed("Successfully Saved"));
+		Assert.assertEquals(dependencyPage.getRelationshipDropdownText(),relationshipDependant); }
+	  
+	@Test 
+	public void Employee_06_Immigration() { 
+		imigrationPage = dependencyPage.clickToImigrationPageButton(); imigrationPage.
+		clickAddRecordsButtonByLabelName("Assigned Immigration Records");
+		imigrationPage.clickToRadioButtonByLabelName(document);
+		imigrationPage.enterNumberTextbox(number);
+		imigrationPage.enterToIssuedDate_DP(issuedDate);
+		imigrationPage.enterToExpiryDate_DP(expiryDate);
+		imigrationPage.enterEligibleStatusTxtbox(eligibleStatus);
+		imigrationPage.clickItemIssuedByDropdown(issuedBy);
+		imigrationPage.enterEligibleReviewDate_DP(eligibleReviewDate);
+		imigrationPage.clickSaveButtonAfterAddRecord();
+	  
+		Assert.assertTrue(imigrationPage.isSuccessMessageDisplayed("Successfully Saved"));
+		Assert.assertEquals(imigrationPage.getIssuedByDropdownSelectedText(),issuedBy);
+	}
+	 
+	
+	@Test
 	public void Employee_07_Job() {
-		//imigrationPage.clickEmployeeNavigationLinkButton("Job");
-		personalDetailsPage.clickEmployeeNavigationLinkButton("Job");
+		imigrationPage.clickEmployeeNavigationLinkButton("Job");
 		jobPage = PageGeneratorManager.getJobPage(driver);
 		jobPage.enterJoinedDate_DP(joinedDate);
 		jobPage.sleepInSecond(1);
@@ -294,7 +325,7 @@ public class PIM_Employee extends BaseTest {
 	
 	@Test
 	public void Employee_08_Salary() {
-		personalDetailsPage.clickEmployeeNavigationLinkButton("Salary");
+		jobPage.clickEmployeeNavigationLinkButton("Salary");
 		salaryPage = PageGeneratorManager.getSalaryPage(driver);
 		salaryPage.clickAddRecordsButtonByLabelName("Assigned Salary Components");
 		salaryPage.enterSalaryComponentsTextbox(salaryComponents);
@@ -311,12 +342,69 @@ public class PIM_Employee extends BaseTest {
 	
 	@Test
 	public void Employee_09_Report() {
-		
+		salaryPage.clickEmployeeNavigationLinkButton("Report-to");
+		reportToPage = PageGeneratorManager.getReportToPage(driver);
+		reportToPage.clickAddRecordsButtonByLabelName("Assigned Supervisors");
+		reportToPage.enterNameSupervisor(nameSupervisor1);
+		reportToPage.clickItemNameSupervisor1("Ranga");
+		reportToPage.selectReportingMethodDropdown(reportingMethodsSupervisor);
+		reportToPage.clickSaveButtonAtAddSupervisor();
+		Assert.assertTrue(reportToPage.isSuccessMessageDisplayed("Successfully Saved"));
+		Assert.assertEquals(reportToPage.getReportingMethodSelectedText(),reportingMethodsSupervisor);
+		reportToPage.sleepInSecond(3);
+		reportToPage.clickAddRecordsButtonByLabelName("Assigned Subordinates");
+		reportToPage.enterNameSupervisor(nameSupervisor2);
+		reportToPage.clickItemNameSupervisor2("James");
+		reportToPage.selectReportingMethodDropdown("Indirect");
+		reportToPage.clickSaveButtonAtAddSupervisor();
+		Assert.assertTrue(reportToPage.isSuccessMessageDisplayed("Successfully Saved"));
 	}
 	
 	@Test
 	public void Employee_10_Qualifications() {
-		
+		reportToPage.clickEmployeeNavigationLinkButton("Qualifications");
+		qualificationsPage = PageGeneratorManager.getQualificationsPage(driver);
+		qualificationsPage.clickAddRecordsButtonByLabelName("Work Experience");
+		qualificationsPage.enterCompanyTextbox(companyName);
+		qualificationsPage.enterJobTitleTextbox(jobTitleExp);
+		qualificationsPage.enterFromDatePickers(fromDate);
+		qualificationsPage.enterToDatePickers(toDate);
+		qualificationsPage.enterCommentsTextbox(comment);
+		qualificationsPage.clickSaveButton();
+		Assert.assertTrue(qualificationsPage.isSuccessMessageDisplayed("Successfully Saved"));
+		qualificationsPage.clickAddRecordsButtonByLabelName("Education");
+		qualificationsPage.selectLevelDropdown(levelEdu);
+		qualificationsPage.enterInstituteTxtbox(institute);
+		qualificationsPage.enterMajorTxtbox(major);
+		qualificationsPage.enterYearTxtbox(year);
+		qualificationsPage.enterScoreTxtbox(score);
+		qualificationsPage.enterStartDateDP(startDate);
+		qualificationsPage.enterEndDateDP(endDate);
+		qualificationsPage.clickSaveButton();
+		Assert.assertTrue(qualificationsPage.isSuccessMessageDisplayed("Successfully Saved"));
+		Assert.assertEquals(qualificationsPage.getLevelSelectedText(),levelEdu);
+		qualificationsPage.clickAddRecordsButtonByLabelName("Skills");
+		qualificationsPage.selectSkillDropdown(skillName);
+		qualificationsPage.enterYearExpTxtbox(yearOfExp);
+		qualificationsPage.clickSaveButton();
+		Assert.assertTrue(qualificationsPage.isSuccessMessageDisplayed("Successfully Saved"));
+		Assert.assertEquals(qualificationsPage.getSkillSelectedText(),skillName);
+		qualificationsPage.clickAddRecordsButtonByLabelName("License");
+		qualificationsPage.selectLicenseTypeDropdown(licenseType);
+		qualificationsPage.enterLicenseNumberTxtbox(licenseNumber);
+		qualificationsPage.enterLicenseIssuedDateDP(licenseIssuedDate);
+		qualificationsPage.enterLicenseExpiryDateDP(licenseExpiryDate);
+		qualificationsPage.clickSaveButton();
+		Assert.assertTrue(qualificationsPage.isSuccessMessageDisplayed("Successfully Saved"));
+		Assert.assertEquals(qualificationsPage.getLicenseTypeSelectedText(),licenseType);
+		qualificationsPage.clickAddRecordsButtonByLabelName("Languages");
+		qualificationsPage.selectLanguageDropdown(language);
+		qualificationsPage.selectFluencyDropdown(fluency);
+		qualificationsPage.selectCompetencyDropdown(competency);
+		qualificationsPage.clickSaveButton();
+		Assert.assertTrue(qualificationsPage.isSuccessMessageDisplayed("Successfully Saved"));
+		Assert.assertEquals(qualificationsPage.getLanguageSelectedText(),language);
+		Assert.assertEquals(qualificationsPage.getCompetencySelectedText(),competency);
 	}
 	
 	@AfterClass

@@ -52,6 +52,10 @@ public class BaseActions extends BasePage {
 	public void clickSaveButtonAfterAddRecord() {
 		clickToElement(driver, BaseActionsUI.DYNAMIC_SAVE_BUTTON);
 	}
+	
+	public void clickSaveButton() {
+		clickToElement(driver, BaseActionsUI.SAVE_BUTTON);
+	}
 		
 	public void clickEmployeeNavigationLinkButton(String title) {
 		clickToElement(driver, BaseActionsUI.DYNAMIC_EMPLOYEE_NAVIGATION_LINK_BUTTON,title);

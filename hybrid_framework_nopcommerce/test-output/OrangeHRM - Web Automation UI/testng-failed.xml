@@ -15,7 +15,7 @@
           <include name="afterClass"/>
           <include name="Employee_02_Personal_Details"/>
           <include name="beforeClass"/>
-          <include name="Employee_08_Salary"/>
+          <include name="Employee_10_Qualifications"/>
         </methods>
       </class> <!-- com.orangehrm.pim.PIM_Employee -->
     </classes>

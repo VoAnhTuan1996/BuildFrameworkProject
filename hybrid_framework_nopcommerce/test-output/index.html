@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-OrangeHRM___Web_Automation_UI" class="navigator-link">
-              <span class="suite-name border-passed">OrangeHRM - Web Automation UI</span>
+              <span class="suite-name border-failed">OrangeHRM - Web Automation UI</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">3 methods, 2 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-OrangeHRM___Web_Automation_UI" class="hide-methods failed suite-OrangeHRM___Web_Automation_UI"> (hide)</a> <!-- hide-methods failed suite-OrangeHRM___Web_Automation_UI -->
+                      <a href="#" panel-name="suite-OrangeHRM___Web_Automation_UI" class="show-methods failed suite-OrangeHRM___Web_Automation_UI"> (show)</a> <!-- show-methods failed suite-OrangeHRM___Web_Automation_UI -->
+                    </span>
+                    <div class="method-list-content failed suite-OrangeHRM___Web_Automation_UI">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM___Web_Automation_UI" title="com.orangehrm.pim.PIM_Employee" class="method navigator-link" hash-for-method="Employee_02_Personal_Details">Employee_02_Personal_Details</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OrangeHRM___Web_Automation_UI" title="com.orangehrm.pim.PIM_Employee" class="method navigator-link" hash-for-method="Employee_10_Qualifications">Employee_10_Qualifications</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-OrangeHRM___Web_Automation_UI -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -105,26 +124,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-OrangeHRM___Web_Automation_UI" title="com.orangehrm.pim.PIM_Employee" class="method navigator-link" hash-for-method="Employee_01_Add_New">Employee_01_Add_New</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM___Web_Automation_UI" title="com.orangehrm.pim.PIM_Employee" class="method navigator-link" hash-for-method="Employee_02_Personal_Details">Employee_02_Personal_Details</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM___Web_Automation_UI" title="com.orangehrm.pim.PIM_Employee" class="method navigator-link" hash-for-method="Employee_08_Salary">Employee_08_Salary</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM___Web_Automation_UI" title="com.orangehrm.pim.PIM_Employee" class="method navigator-link" hash-for-method="Employee_09_Report">Employee_09_Report</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OrangeHRM___Web_Automation_UI" title="com.orangehrm.pim.PIM_Employee" class="method navigator-link" hash-for-method="Employee_10_Qualifications">Employee_10_Qualifications</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-OrangeHRM___Web_Automation_UI -->
@@ -139,6 +138,77 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-OrangeHRM___Web_Automation_UI" class="panel OrangeHRM___Web_Automation_UI">
+          <div class="suite-OrangeHRM___Web_Automation_UI-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.orangehrm.pim.PIM_Employee</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Employee_02_Personal_Details">
+                  </a> <!-- Employee_02_Personal_Details -->
+                  <span class="method-name">Employee_02_Personal_Details</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;i data-v-bddebfba=&quot;&quot; data-v-67d2aedf=&quot;&quot; class=&quot;oxd-icon bi-caret-down-fill oxd-select-text--arrow&quot;&gt;&lt;/i&gt; is not clickable at point (1008, 219). Other element would receive the click: &lt;hr data-v-9f847659=&quot;&quot; data-v-8c6e0396=&quot;&quot; class=&quot;oxd-divider&quot; role=&quot;separator&quot; aria-orientation=&quot;horizontal&quot;&gt;
+  (Session info: chrome=120.0.6099.225)
+Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bf2eafd26e26578eaf79af17debb5b8d, clickElement {id=87D22DA76A5D7ADEAE83575ACAC2E14F_element_473}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55534}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55534/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bf2eafd26e26578eaf79af17debb5b8d)] -&gt; xpath: //label[text()=&apos;Marital Status&apos;]/parent::div/following-sibling::div//i]
+Session ID: bf2eafd26e26578eaf79af17debb5b8d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at commons.BasePage.selectItemInDropdown(BasePage.java:219)
+	at pageObjects.orangehrm.PersonalDetailPageObject.selectToMaritalStatusDropdown(PersonalDetailPageObject.java:74)
+	at com.orangehrm.pim.PIM_Employee.Employee_02_Personal_Details(PIM_Employee.java:204)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Employee_10_Qualifications">
+                  </a> <!-- Employee_10_Qualifications -->
+                  <span class="method-name">Employee_10_Qualifications</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=120.0.6099.225)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.18.0&apos;, revision: &apos;b6bf9de7cc&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bf2eafd26e26578eaf79af17debb5b8d, clickElement {id=51BA2B55B1379E68BE4C33BA2A1FD944_element_650}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.225, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55534}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55534/devtoo..., se:cdpVersion: 120.0.6099.225, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bf2eafd26e26578eaf79af17debb5b8d)] -&gt; xpath: //label[text()=&apos;Language&apos;]/parent::div/following-sibling::div//i]
+Session ID: bf2eafd26e26578eaf79af17debb5b8d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at commons.BasePage.selectItemInDropdown(BasePage.java:219)
+	at pageObjects.orangehrm.QualificationsPageObject.selectLanguageDropdown(QualificationsPageObject.java:96)
+	at com.orangehrm.pim.PIM_Employee.Employee_10_Qualifications(PIM_Employee.java:403)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-OrangeHRM___Web_Automation_UI-class-failed -->
           <div class="suite-OrangeHRM___Web_Automation_UI-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -150,34 +220,6 @@
                   <a name="Employee_01_Add_New">
                   </a> <!-- Employee_01_Add_New -->
                   <span class="method-name">Employee_01_Add_New</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Employee_02_Personal_Details">
-                  </a> <!-- Employee_02_Personal_Details -->
-                  <span class="method-name">Employee_02_Personal_Details</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Employee_08_Salary">
-                  </a> <!-- Employee_08_Salary -->
-                  <span class="method-name">Employee_08_Salary</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Employee_09_Report">
-                  </a> <!-- Employee_09_Report -->
-                  <span class="method-name">Employee_09_Report</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Employee_10_Qualifications">
-                  </a> <!-- Employee_10_Qualifications -->
-                  <span class="method-name">Employee_10_Qualifications</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -240,32 +282,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Employee_02_Personal_Details')
+data.setCell(0, 1, 'Employee_10_Qualifications')
 data.setCell(0, 2, 'com.orangehrm.pim.PIM_Employee')
-data.setCell(0, 3, 37296);
+data.setCell(0, 3, 15047);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'Employee_01_Add_New')
 data.setCell(1, 2, 'com.orangehrm.pim.PIM_Employee')
-data.setCell(1, 3, 10999);
+data.setCell(1, 3, 12486);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Employee_08_Salary')
+data.setCell(2, 1, 'Employee_02_Personal_Details')
 data.setCell(2, 2, 'com.orangehrm.pim.PIM_Employee')
-data.setCell(2, 3, 9033);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'Employee_10_Qualifications')
-data.setCell(3, 2, 'com.orangehrm.pim.PIM_Employee')
-data.setCell(3, 3, 6);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'Employee_09_Report')
-data.setCell(4, 2, 'com.orangehrm.pim.PIM_Employee')
-data.setCell(4, 3, 5);
+data.setCell(2, 3, 7306);
 window.suiteTableData['OrangeHRM___Web_Automation_UI']= { tableData: data, tableDiv: 'times-div-OrangeHRM___Web_Automation_UI'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 57 seconds</span>
+              <span class="suite-total-time">Total running time: 34 seconds</span>
               <div id="times-div-OrangeHRM___Web_Automation_UI">
               </div> <!-- times-div-OrangeHRM___Web_Automation_UI -->
             </div> <!-- times-div -->
@@ -298,31 +332,27 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass(https://opensource-demo.orangehrmlive.com/, chrome)</span>
-                <span class="method-start">62 ms</span>
+                <span class="method-start">74 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">Employee_01_Add_New</span>
-                <span class="method-start">13515 ms</span>
+                <span class="method-start">46321 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Employee_02_Personal_Details</span>
-                <span class="method-start">24617 ms</span>
+                <span class="method-start">58918 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Employee_08_Salary</span>
-                <span class="method-start">61918 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">Employee_09_Report</span>
-                <span class="method-start">70957 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">Employee_10_Qualifications</span>
-                <span class="method-start">70967 ms</span>
+                <span class="method-start">66236 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">70980 ms</span>
+                <span class="method-start">81290 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
