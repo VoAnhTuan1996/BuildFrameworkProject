@@ -97,6 +97,13 @@ public class BasePage {
 		waitForAlertPresence(driver).sendKeys(textValue);
 	}
 	
+	public void switchToNextField(WebDriver driver) {
+        WebElement activeElement = driver.switchTo().activeElement();
+        Actions actions = new Actions(driver);
+        actions.sendKeys(activeElement, org.openqa.selenium.Keys.TAB).perform();
+    }
+	
+	
 	public void switchToWindowByID(WebDriver driver, String windowID) {
 		Set<String> allWindowIDs = driver.getWindowHandles();
 		for(String id:allWindowIDs) {
@@ -106,6 +113,7 @@ public class BasePage {
 			}
 		}
 	}
+	
 	
 	public void switchToWindowByTitle(WebDriver driver, String tabTitle) {
 		//Get hết ra các id đang có

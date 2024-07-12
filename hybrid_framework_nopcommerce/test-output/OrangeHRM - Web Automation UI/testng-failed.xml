@@ -11,10 +11,12 @@
     <classes>
       <class name="com.orangehrm.pim.PIM_Employee">
         <methods>
+          <include name="Employee_07_Job"/>
           <include name="initBeforeSuite"/>
           <include name="afterClass"/>
-          <include name="Employee_02_Personal_Details"/>
+          <include name="Employee_09_Report"/>
           <include name="beforeClass"/>
+          <include name="Employee_08_Salary"/>
           <include name="Employee_10_Qualifications"/>
         </methods>
       </class> <!-- com.orangehrm.pim.PIM_Employee -->
